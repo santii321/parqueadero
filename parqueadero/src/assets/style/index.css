@@ -9,11 +9,15 @@ body{
     z-index: 100;
     padding: 48px 0 0;
     box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.1);
+    background-image: url(../images/senalizacion.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: contain;
 }
 
 .sidebar .nav-link {
     font-weight: 500;
-    color: yellow;
+    color: #ffff00;
 }
 .sidebar .nav-link .feather {
     margin-right: 8px;
@@ -32,14 +36,14 @@ body{
     width: fit-content;
 }
 .botonIngresar{
-    background: #fff200;
+    background: #ffff00;
     font-weight: 500;
 }
 .botonIngresar:hover{
     background-color: rgb(255, 217, 0);
 }
 #addon-wrapping {
-    background: yellow;
+    background: #ffff00;
     font-weight: 600;
     border-color: black;
 }
