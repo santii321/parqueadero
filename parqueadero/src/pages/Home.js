@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios';
 function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
@@ -13,7 +13,7 @@ function Home() {
   getPlaca()
   
   const postData = () => {
-    if (placas == '') {
+    if (placas === '') {
       alert("todos los campos son obligatorios")
     return
     } 

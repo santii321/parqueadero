@@ -1,0 +1,52 @@
+import Producto from "../models/productosModels.js";
+
+const mostrarProductos = async (req, res) => {
+    try{
+        const productos = await Producto.findAll()
+        res.json(productos)
+
+    }catch(error){
+        res.json({
+            message: "No tiene ningun producto"
+        })
+    }
+};
+const mostrarProducto = async (req, res) => {
+    try {
+        const producto = await Producto.findOne({ where:{id: req.params.id}})
+        res.json(producto)
+    } catch (error) {
+        res.json({
+            message: `no se encontro ningun producto ${error}`
+        })
+    }
+};
+const crearProducto = async (req, res) => {
+    try {
+        await Producto.create(req.body)
+        res.json({
+            messege: "se ha creado correctamente el producto"
+        })
+    } catch (error) {
+        res.json({
+            messege: `no se ha creado ningun producto ${error}`
+        })
+        
+    }
+};
+const editarProducto = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+};
+const eliminarProducto = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+};
+
+export { mostrarProductos, crearProducto, mostrarProducto, eliminarProducto, editarProducto };
