@@ -1,8 +1,15 @@
-import { useState } from 'react'
-function Home(){
+import { useState, useEffect } from 'react'
+function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
+  const [placa, setPlaca] = useState([])
+  function getPlaca() {
+    fetch('http://localhost:3100/placas')
+    .then(res => res.json())
+    .then(res => setPlaca(res))
+    
+  }
+  getPlaca()
   return (
-
     <div class="row g-6 mb-6">
       <div class="col-xl-3 col-sm-6 col-12">
         <div class="card">
@@ -59,13 +66,40 @@ function Home(){
         </div>
         <div class="input-group flex-nowrap">
           <span class="input-group-text" id="addon-wrapping">FECHA  Y HORA DE INGRESO</span>
-          <input value={value} onChange={(e)=>onChange(e.target.value)} type="data" class="form-control" disabled />
+          <input value={value} onChange={(e) => onChange(e.target.value)} type="data" class="form-control" disabled />
         </div>
         <div class="input-group flex-nowrap">
-          <button class=" btn botonIngresar">INGRESAR</button>
+          <button class=" btns botonIngresar">INGRESAR</button>
         </div>
       </div>
+      <div class="bd-example">
+        <table class="table table-dark table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Placa</th>
+              <th scope="col">Hora de ingreso</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+              {placa.map(placas =>(
+                <tr key={placas.id}>
+                  <th>{placas.id}</th>
+                  <th>{placas.placa}</th>
+                  <th>{placas.fecha_ingreso}</th>
+                  <th> </th>
+                                   
+               </tr>
+                
+              ))}
+              
+          </tbody>
+
+        </table>
+      </div>
     </div>
+
 
   )
 
