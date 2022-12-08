@@ -19,7 +19,7 @@ const Card = () =>{
                     </p>
                     
                     </section>
-                    <input className='btn-agregarCarrito' type='button' value='Agregar al carrito' />
+                    <button className='btn-agregarCarrito'>agregar al carrito</button>
                 </section>
             ))}
             
