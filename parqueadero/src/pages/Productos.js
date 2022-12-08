@@ -1,12 +1,15 @@
+import '../assets/style/productos.css'
 import { Link } from "react-router-dom";
+import Card from '../Productos/Card';
 function Productos() {
     return (
-        <>
-            <h1>Productos</h1>
-            <Link className="btn" to="/AgregarProductos">
-                producto agregar
+        <section className=''>
+            <Link className="btn btn-agregar" to="/AgregarProductos">
+                agregar producto
             </Link>
-        </>
+
+            <Card />
+        </section>
     )
 }
 export default Productos
