@@ -1,11 +1,11 @@
-.contenedor, .contenedormensualidad
+.contenedor
 {
     width: 80%;
     height: 80vh;
     background-color: #aaa;
   
   }
-
+ 
 #contact {
     background: #F9F9F9;
     padding: 25px;
@@ -100,6 +100,15 @@
 
   /*-------------------------------------------------------------------------------------------------*/
 
+  .contenedormensualidad{
+    width: 100%;
+    height: 90vh;
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .cards {
     display: flex;
     justify-content: center;
@@ -125,21 +134,21 @@
     transform: scale(1.1);
     z-index: 1;
   }
-  ul {
+   .listasMencualidad {
     margin: 2.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  ul li {
+  .listasMencualidad li {
     list-style-type: none;
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 1rem 0;
   }
-  ul li.price {
+  .listasMencualidad li.price {
     font-size: 3rem;
     color: hsl(232, 13%, 33%);
     padding-bottom: 2rem;

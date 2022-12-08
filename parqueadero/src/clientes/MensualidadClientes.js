@@ -2,10 +2,10 @@ import '../assets/style/clientes.css'
 
 const MensualidadClientes = () => {
     return (
-        <section className="contenedormensualidad m-2 mx-3">
+        <section className="contenedormensualidad m-2 mx-3 mt-5">
             <div class="cards">
                 <div className="card shadow">
-                    <ul>
+                    <ul className='listasMencualidad'>
                         <li className="pack">Basic</li>
                         <li id="basic" className="price bottom-bar">$6.000</li>
                         <li className="bottom-bar">Vigilancia 24/7</li>
@@ -15,7 +15,7 @@ const MensualidadClientes = () => {
                     </ul>
                 </div>
                 <div className="card active">
-                    <ul>
+                    <ul className='listasMencualidad'>
                         <li className="pack">Mensualidad</li>
                         <li id="professional" className="price bottom-bar">$120.000</li>
                         <li className="bottom-bar">Moto Spa</li>
@@ -25,7 +25,7 @@ const MensualidadClientes = () => {
                     </ul>
                 </div>
                 <div className="card shadow">
-                    <ul>
+                    <ul className='listasMencualidad'>
                         <li className="pack">Anualidad</li>
                         <li id="master" className="price bottom-bar">$300.000</li>
                         <li className="bottom-bar">Renovación de SOAT</li>

@@ -4,8 +4,12 @@ import '../assets/style/clientes.css'
 
 function NuevoCliente() {
     return(
-        <><FormularioClientes /><MensualidadClientes /></>
+         <section className="d-block">
 
+          <><FormularioClientes /><MensualidadClientes /></>
+
+        </section>
+        
     )
 }
 export default  NuevoCliente;
