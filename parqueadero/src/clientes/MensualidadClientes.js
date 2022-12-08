@@ -7,31 +7,31 @@ const MensualidadClientes = () => {
                 <div className="card shadow">
                     <ul>
                         <li className="pack">Basic</li>
-                        <li id="basic" className="price bottom-bar">&dollar;199.99</li>
-                        <li className="bottom-bar">500 GB Storage</li>
-                        <li className="bottom-bar">2 Users Allowed</li>
-                        <li className="bottom-bar">Send up to 3 GB</li>
-                        <li><button className="btn">Learn More</button></li>
+                        <li id="basic" className="price bottom-bar">$6.000</li>
+                        <li className="bottom-bar">Vigilancia 24/7</li>
+                        <li className="bottom-bar">Reserva en línea</li>
+                        <li className="bottom-bar">Red Extensa y Avanzada</li>
+                        <li><button className="btn">Elegir plan</button></li>
                     </ul>
                 </div>
                 <div className="card active">
                     <ul>
-                        <li className="pack">Professional</li>
-                        <li id="professional" className="price bottom-bar">&dollar;249.99</li>
-                        <li className="bottom-bar">1 TB Storage</li>
-                        <li className="bottom-bar">5 Users Allowed</li>
-                        <li className="bottom-bar">Send up to 10 GB</li>
-                        <li><button className="btn active-btn">Learn More</button></li>
+                        <li className="pack">Mensualidad</li>
+                        <li id="professional" className="price bottom-bar">$120.000</li>
+                        <li className="bottom-bar">Moto Spa</li>
+                        <li className="bottom-bar">Reserva en línea</li>
+                        <li className="bottom-bar">Cambio de aceite</li>
+                        <li><button className="btn active-btn">Elegir plan</button></li>
                     </ul>
                 </div>
                 <div className="card shadow">
                     <ul>
-                        <li className="pack">Master</li>
-                        <li id="master" className="price bottom-bar">&dollar;399.99</li>
-                        <li className="bottom-bar">2 TB Storage</li>
-                        <li className="bottom-bar">10 Users Allowed</li>
-                        <li className="bottom-bar">Send up to 20 GB</li>
-                        <li><button className="btn">Learn More</button></li>
+                        <li className="pack">Anualidad</li>
+                        <li id="master" className="price bottom-bar">$300.000</li>
+                        <li className="bottom-bar">Renovación de SOAT</li>
+                        <li className="bottom-bar">Reserva en línea</li>
+                        <li className="bottom-bar">Descuentos en accesorios</li>
+                        <li><button className="btn">Elegir plan</button></li>
                     </ul>
                 </div>
             </div>
