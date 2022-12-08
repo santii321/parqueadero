@@ -1,6 +1,11 @@
+import FormularioClientes from "../clientes/FormularioClientes"
+import MensualidadClientes from "../clientes/MensualidadClientes"
+import '../assets/style/clientes.css'
+
 function NuevoCliente() {
     return(
-        <h1>NuevoCliente</h1>
+        <FormularioClientes />
+
     )
 }
-export default  NuevoCliente
+export default  NuevoCliente;
