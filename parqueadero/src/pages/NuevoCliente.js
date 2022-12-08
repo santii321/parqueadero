@@ -4,7 +4,7 @@ import '../assets/style/clientes.css'
 
 function NuevoCliente() {
     return(
-        <FormularioClientes />
+        <><FormularioClientes /><MensualidadClientes /></>
 
     )
 }

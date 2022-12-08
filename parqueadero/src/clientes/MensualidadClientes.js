@@ -1,116 +1,38 @@
+import '../assets/style/clientes.css'
+
 const MensualidadClientes = () => {
     return (
-        <section class="fw-main-row  ds ms section_padding_top_100 section_padding_bottom_100 columns_padding_15 columns_margin_bottom_10 parallax background_cover" style="background-position: 50% -6px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="row fw-pricing">
-                            <div class="fw-package-wrap col-sm-4 default-col ">
-                                <div class="fw-package price-table style2 with_border color_bg_1">
-                                    <div class="fw-heading-row plan-name">
-                                        <h3>
-                                            ON THE DAY<strong>BASIC</strong>							</h3>
-                                    </div>
-                                    <div class="fw-pricing-row plan-price">
-                                        <span>&nbsp;</span>
-                                        <span class="grey">$20.90</span>
-                                        <p>/month</p>
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        First-Class Customer Experience
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Online Booking
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Continual Evolution
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Extensive and Advanced Network
-                                    </div>
-                                    <div class="fw-button-row call-to-action">
-
-                                        <a href="#" target="_self" class="theme_button inverse wide_button">
-                                            <span>Choose Plan</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fw-package-wrap col-sm-4 highlight-col ">
-                                <div class="fw-package price-table style2 with_border color_bg_2">
-                                    <div class="fw-heading-row plan-name">
-                                        <h3>
-                                            EVENTS<strong>ECONOMY</strong>							</h3>
-                                    </div>
-                                    <div class="fw-pricing-row plan-price">
-                                        <span>&nbsp;</span>
-                                        <span class="grey">$22.90</span>
-                                        <p>/month</p>
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        First-Class Customer Experience
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Online Booking
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Continual Evolution
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Extensive and Advanced Network
-                                    </div>
-                                    <div class="fw-button-row call-to-action">
-
-                                        <a href="#" target="_self" class="theme_button inverse wide_button">
-                                            <span>Choose Plan</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fw-package-wrap col-sm-4 default-col ">
-                                <div class="fw-package price-table style2 with_border color_bg_1">
-                                    <div class="fw-heading-row plan-name">
-                                        <h3>
-                                            MONTHLY<strong>STANDART</strong>							</h3>
-                                    </div>
-                                    <div class="fw-pricing-row plan-price">
-                                        <span>&nbsp;</span>
-                                        <span class="grey">$122.90</span>
-                                        <p>/month</p>
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        First-Class Customer Experience
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Online Booking
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Continual Evolution
-                                    </div>
-                                    <div class="fw-default-row">
-
-                                        Extensive and Advanced Network
-                                    </div>
-                                    <div class="fw-button-row call-to-action">
-
-                                        <a href="#" target="_self" class="theme_button inverse wide_button">
-                                            <span>Choose Plan</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div>
+        <section className="contenedormensualidad m-2 mx-3">
+            <div class="cards">
+                <div className="card shadow">
+                    <ul>
+                        <li className="pack">Basic</li>
+                        <li id="basic" className="price bottom-bar">&dollar;199.99</li>
+                        <li className="bottom-bar">500 GB Storage</li>
+                        <li className="bottom-bar">2 Users Allowed</li>
+                        <li className="bottom-bar">Send up to 3 GB</li>
+                        <li><button className="btn">Learn More</button></li>
+                    </ul>
+                </div>
+                <div className="card active">
+                    <ul>
+                        <li className="pack">Professional</li>
+                        <li id="professional" className="price bottom-bar">&dollar;249.99</li>
+                        <li className="bottom-bar">1 TB Storage</li>
+                        <li className="bottom-bar">5 Users Allowed</li>
+                        <li className="bottom-bar">Send up to 10 GB</li>
+                        <li><button className="btn active-btn">Learn More</button></li>
+                    </ul>
+                </div>
+                <div className="card shadow">
+                    <ul>
+                        <li className="pack">Master</li>
+                        <li id="master" className="price bottom-bar">&dollar;399.99</li>
+                        <li className="bottom-bar">2 TB Storage</li>
+                        <li className="bottom-bar">10 Users Allowed</li>
+                        <li className="bottom-bar">Send up to 20 GB</li>
+                        <li><button className="btn">Learn More</button></li>
+                    </ul>
                 </div>
             </div>
         </section>
