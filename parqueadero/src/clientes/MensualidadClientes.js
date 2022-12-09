@@ -2,10 +2,10 @@ import '../assets/style/clientes.css'
 
 const MensualidadClientes = () => {
     return (
-        <section className="contenedormensualidad m-2 mx-3 mt-5">
+        <section className="contenedormensualidad m-2 mx-3 mt-2">
             <div class="cards">
                 <div className="card shadow">
-                    <ul className='listasMencualidad'>
+                    <ul className='listasMensualidad'>
                         <li className="pack">Basic</li>
                         <li id="basic" className="price bottom-bar">$6.000</li>
                         <li className="bottom-bar">Vigilancia 24/7</li>
@@ -15,9 +15,9 @@ const MensualidadClientes = () => {
                     </ul>
                 </div>
                 <div className="card active">
-                    <ul className='listasMencualidad'>
+                    <ul className='listasMensualidad'>
                         <li className="pack">Mensualidad</li>
-                        <li id="professional" className="price bottom-bar">$120.000</li>
+                        <li id="professional" className="price bottom-bar">$20.000</li>
                         <li className="bottom-bar">Moto Spa</li>
                         <li className="bottom-bar">Reserva en línea</li>
                         <li className="bottom-bar">Cambio de aceite</li>
@@ -25,9 +25,9 @@ const MensualidadClientes = () => {
                     </ul>
                 </div>
                 <div className="card shadow">
-                    <ul className='listasMencualidad'>
+                    <ul className='listasMensualidad'>
                         <li className="pack">Anualidad</li>
-                        <li id="master" className="price bottom-bar">$300.000</li>
+                        <li id="master" className="price bottom-bar">$110.000</li>
                         <li className="bottom-bar">Renovación de SOAT</li>
                         <li className="bottom-bar">Reserva en línea</li>
                         <li className="bottom-bar">Descuentos en accesorios</li>
