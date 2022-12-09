@@ -2,7 +2,7 @@ import '../assets/style/clientes.css'
 
 const MensualidadClientes = () => {
     return (
-        <section className="contenedormensualidad m-2 mx-3 mt-2">
+        <section className="contenedormensualidad m-2 mx-3 mt-5">
             <div class="cards">
                 <div className="card shadow">
                     <ul className='listasMensualidad'>

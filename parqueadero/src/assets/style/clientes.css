@@ -269,3 +269,50 @@
 }
 
 /*!--------------------------------------------TESTIMONIOS ----------------------------------------------*/
+
+ .opiniones{
+    background-color: white;
+    margin: 0 20px;
+    padding:0 10px;
+    border-radius: 20px;
+    border: 0;
+    width: 90%;
+ }
+  
+ .card-img-top{
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px grey;
+    width: 100px;
+    height: 100px;
+   
+ }
+
+ h4{
+    color: #ffff00;
+    font-size: 1.5rem;
+    line-height: 1.1;
+ }
+
+ h4 span{
+    font-size: 1rem;
+    color: #666666;
+ }
+
+ .card-text{
+    font-size: 1rem;
+    color: #555;
+    padding-bottom:0.6rem;
+ }
+
+ .carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -60px;
+
+ 
+ }
+
+
+  
