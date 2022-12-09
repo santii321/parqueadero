@@ -1,45 +1,38 @@
-.contenedor
-{
+.contenedor{
     width: 100%;
-    height: 80vh;
-    background-color: #aaa;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
   }
- 
+
 #contact {
-    background: #F9F9F9;
-    padding: 25px;
+    gap: 10px !important;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    height: 100%;
-    width: 100%;
-    float: left;
-    margin-right: 20px;
+   
   }
   
   #contact h3 {
+    color: whitesmoke;
     display: block;
     font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
+    font-weight: 150;
+    margin-bottom: 2%;
   }
-  
-  fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
+
+  #contact span {
+    width: 30%;
   }
-  
+
+  #contact fieldset{
+    width: 100% !important;
+  }
+
+
   #contact input[type="text"],
   #contact textarea {
-    width: 100%;
-    border: 1px solid #ccc;
+    width: 70%;
     background: #FFF;
-    margin: 0 0 5px;
     padding: 10px;
   }
   
@@ -48,28 +41,22 @@
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
-    border: 1px solid #aaa;
+    
   }
   
-  #contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
-  }
+ 
   
   #contact button[type="submit"] {
     cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #4CAF50;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
+    width: 50%;
+    height: 7vh;
+    background:#ffff00;
+    margin-left: 25%;
+    font-weight: 500;
   }
   
   #contact button[type="submit"]:hover {
-    background: #43A047;
+    background: rgb(255, 217, 0);
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -77,6 +64,7 @@
   
   #contact button[type="submit"]:active {
     box-shadow: inset 0 1px 3px gray;
+    background: rgb(255, 217, 0)
   }
   
   #contact input:focus,
@@ -85,28 +73,13 @@
     border: 1px solid #aaa;
   }
   
-  ::-webkit-input-placeholder {
-    color: #888;
-  }
-  
-  :-moz-placeholder {
-    color: #888;
-  }
-  
-  ::-moz-placeholder {
-    color: #888;
-  }
-  
-  :-ms-input-placeholder {
-    color: #888;
-  }
-
-  /*-------------------------------------------------------------------------------------------------*/
+ 
+  /*------------------------------------CARDS MENSUALIDAD-------------------------------------------------------------*/
 
   .contenedormensualidad{
     width: 100%;
     height: 90vh;
-    background-color: #aaa;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +102,7 @@
     background: linear-gradient(
       135deg,
       yellow 0%,
-      rgba(105, 111, 221, 1) 100%
+       rgb(255, 218, 0)100%
     );
     color: #fff;
     display: flex;
