@@ -1,5 +1,19 @@
 import Producto from "../models/productosModels.js";
 
+const crearProducto = async (req, res) => {
+    try {
+        await Producto.create(req.body)
+        res.json({
+            messege: "se ha creado correctamente el producto"
+        })
+    } catch (error) {
+        res.json({
+            messege: `no se ha creado ningun producto ${error}`
+        })
+        
+    }
+};
+
 const mostrarProductos = async (req, res) => {
     try{
         const productos = await Producto.findAll()
@@ -20,20 +34,6 @@ const mostrarProducto = async (req, res) => {
         res.json({
             message: `no se encontro ningun producto ${error}`
         })
-    }
-};
-
-const crearProducto = async (req, res) => {
-    try {
-        await Producto.create(req.body)
-        res.json({
-            messege: "se ha creado correctamente el producto"
-        })
-    } catch (error) {
-        res.json({
-            messege: `no se ha creado ningun producto ${error}`
-        })
-        
     }
 };
 
