@@ -11,6 +11,7 @@ const mostrarProductos = async (req, res) => {
         })
     }
 };
+
 const mostrarProducto = async (req, res) => {
     try {
         const producto = await Producto.findOne({ where:{id: req.params.id}})
@@ -21,6 +22,7 @@ const mostrarProducto = async (req, res) => {
         })
     }
 };
+
 const crearProducto = async (req, res) => {
     try {
         await Producto.create(req.body)
@@ -34,17 +36,30 @@ const crearProducto = async (req, res) => {
         
     }
 };
+
 const editarProducto = async (req, res) => {
     try {
-        
+        await Producto.update(red.body, {where: {id: req.params.id}});
+        res.json({
+            messege: "se ha modificado correctamente el producto"
+        })
     } catch (error) {
-        
+        res.json({
+            messege: `no se ha creado ningun producto ${error}`
+        })
     }
 };
+
 const eliminarProducto = async (req, res) => {
     try {
-        
+        await Producto.destroy(red.body, {where: {id: req.params.id}});
+        res.json({
+            messege: "se ha eliminado correctamente el producto"
+        })
     } catch (error) {
+        res.json({
+            messege: `no se ha creado ningun producto ${error}`
+        })
         
     }
 };
