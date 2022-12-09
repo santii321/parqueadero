@@ -4,7 +4,7 @@ import '../assets/style/clientes.css'
 
 function NuevoCliente() {
     return(
-         <section className="d-block">
+         <section className="d-block w-100">
 
           <><FormularioClientes /><MensualidadClientes /></>
 

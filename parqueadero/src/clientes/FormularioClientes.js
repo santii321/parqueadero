@@ -2,33 +2,39 @@ import '../assets/style/clientes.css'
 
 const FormularioClientes = () => {
     return (
-        <section className="contenedor m-2 mx-3">
-            <form className="" id="contact" action="" method="post">
+        
+            <form className="contact w-50 d-flex flex-column" id="contact" action="" method="post">
                 <h3 className="fw-semibold text-center">CLIENTES</h3>
-                <fieldset>
-                    <input placeholder="Nombre" type="text" tabindex="1" required autofocus />
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>NOMBRE</span>
+                    <input type="text" tabindex="1" value="" required autofocus />
                 </fieldset>
-                <fieldset>
-                    <input placeholder="Documento" type="text" tabindex="2" required />
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>DOCUMENTO</span>
+                    <input type="text" tabindex="2" value="" required autofocus />
                 </fieldset>
-                <fieldset>
-                    <input placeholder="Correo" type="text" tabindex="3" required />
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>CORREO</span>
+                    <input type="text" tabindex="3" value="" required autofocus />
                 </fieldset>
-                <fieldset>
-                    <input placeholder="Dirección" type="text" tabindex="4" required />
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>DIRECCIÓN</span>
+                    <input type="text" tabindex="4" value="" required autofocus />
                 </fieldset>
-                <fieldset>
-                    <input placeholder="Telefono" type="text" tabindex="5" required />
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>TELEFONO</span>
+                    <input type="text" tabindex="5" value="" required autofocus />
                 </fieldset>
-                <fieldset>
+                <fieldset className='input-group flex-nowrap'>
+                    <span className='input-group-text' id='addon-wrapping'>DESCRIPCIÓN</span>
                     <textarea placeholder="Descripción...." tabindex="6" required></textarea>
                 </fieldset>
-                <fieldset>
-                    <button className="my-3 fw-semibold " type="submit" id="contact-submit" data-submit="...Sending">Guardar</button>
-                </fieldset>
+
+                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">Guardar</button>
+
             </form>
 
-        </section>
+       
     )
 }
 
