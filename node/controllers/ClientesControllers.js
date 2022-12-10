@@ -30,8 +30,22 @@ const mostrarCliente = async (req, res) => {
         })
     }
 }
+
 //*Crear cliente
 
+const crearCliente = async (req, res) => {
+    try{
+       await clientesModel.create(req.body)
+       res.json({
+                   message: 'Cliente creado correctamente'
+               })
+
+    }catch (error){
+        res.json({
+            message: `No se creo el cliente correctamente ${error}`
+        })
+    }
+}
 //*Editar cliente
 
 //*Eliminar cliente
