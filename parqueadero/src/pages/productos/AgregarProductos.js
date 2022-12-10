@@ -1,5 +1,5 @@
-import '../assets/style/agregarProducto.css';
-import AgregarProducto from "../Productos/AgregarProducto.js";
+import '../../assets/style/productos/agregarProducto.css';
+import AgregarProducto from "../../Productos/AgregarProducto.js";
 function AgregarProductos() {
     return(
         <>
