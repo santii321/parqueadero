@@ -31,15 +31,13 @@
 }
 
 
-#contact input[type="text"],
-#contact textarea {
+#contact input[type="text"]{
     width: 70%;
     background: #FFF;
     padding: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact textarea:hover {
+#contact input[type="text"]:hover{
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
