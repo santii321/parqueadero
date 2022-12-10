@@ -34,18 +34,33 @@ const mostrarCliente = async (req, res) => {
 //*Crear cliente
 
 const crearCliente = async (req, res) => {
-    try{
-       await clientesModel.create(req.body)
-       res.json({
-                   message: 'Cliente creado correctamente'
-               })
+    try {
+        await clientesModel.create(req.body)
+        res.json({
+            message: 'Cliente creado correctamente'
+        })
 
-    }catch (error){
+    } catch (error) {
         res.json({
             message: `No se creo el cliente correctamente ${error}`
         })
     }
 }
 //*Editar cliente
+
+const editCliente = async (req, res) => {
+    try {
+        await clientesModel.update(req.body,
+            { where: { id: req.params.id } })
+        res.json({
+            message: 'Cliente editado correctamente'
+        })
+    } catch (error) {
+        res.json({
+            message: `No se puedo editar el cliente correctamente ${error}`
+        })
+    }
+}
+
 
 //*Eliminar cliente
