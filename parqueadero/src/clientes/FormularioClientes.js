@@ -4,7 +4,7 @@ const FormularioClientes = () => {
     return (
         <section className="contenedor m-2 mx-3 mt-5">
             <form className="contact w-50 d-flex flex-column" id="contact" action="" method="post">
-                <h3 className="text-center">Nuevo Cliente</h3>
+                <h3 className="text-center text-uppercase">Nuevo Cliente</h3>
                 <fieldset className='input-group flex-nowrap'>
                     <span className='input-group-text' id='addon-wrapping'>NOMBRE</span>
                     <input type="text" tabindex="1" value="" required autofocus />
