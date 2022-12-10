@@ -64,3 +64,25 @@ const editCliente = async (req, res) => {
 
 
 //*Eliminar cliente
+
+const eliminarCliente = async (req, res) => {
+    try {
+        await clientesModel.destroy({
+            where: { id: req.params.id }
+        })
+        res.json({
+            message: 'Cliente eliminado correctamente'
+        })
+    }catch (error) {
+        res.json({ message: `No se puedo eliminar el cliente correctamente ${error}`
+    })
+    }
+}
+
+export{
+    mostrarClientes,
+    mostrarCliente, 
+    crearCliente,
+    editCliente,
+    eliminarCliente
+}
