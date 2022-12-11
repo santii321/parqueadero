@@ -8,8 +8,9 @@ function NuevoCliente() {
     return(
          <section className="d-block w-100">
 
-          <TestimoniosClientes />
+          
           <MensualidadClientes />
+          <TestimoniosClientes />
           <FormularioClientes />
           <TablaClientes />
 
