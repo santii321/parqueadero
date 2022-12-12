@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
+
 function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
   const [placa, setPlaca] = useState([])
@@ -29,71 +30,71 @@ function Home() {
 
 
   return (
-    <div class="row g-6 mb-6">
-      <div class="col-xl-3 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Usuarios</span> <span class="h3 font-bold mb-0">0</span></div>
-              <div class="col-auto">
-                <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle"><i class="bi bi-credit-card"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Motos</span> <span class="h3 font-bold mb-0">0</span></div>
-              <div class="col-auto">
-                <div class="icon icon-shape bg-primary text-white text-lg rounded-circle"><i class="bi bi-people"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Total saldo</span> <span class="h3 font-bold mb-0">$1.400</span></div>
-              <div class="col-auto">
-                <div class="icon icon-shape bg-info text-white text-lg rounded-circle"><i class="bi bi-clock-history"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">capacidad</span> <span class="h3 font-bold mb-0">95%</span></div>
-              <div class="col-auto">
-                <div class="icon icon-shape bg-warning text-white text-lg rounded-circle"><i class="bi bi-minecart-loaded"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="contenido-placa">
-          <div class="input-group flex-nowrap">
+    <section className="row g-6 mb-6">
+      <section className="col-xl-3 col-sm-6 col-12">
+        <section className="card">
+          <section className="card-body">
+            <section className="row">
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Usuarios</span> <span className="h3 font-bold mb-0">0</span></section>
+              <section className="col-auto">
+                <section className="icon icon-shape bg-tertiary text-white text-lg rounded-circle"><i className="bi bi-credit-card"></i></section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section className="col-xl-3 col-sm-6 col-12">
+        <section className="card">
+          <section className="card-body">
+            <section className="row">
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Motos</span> <span className="h3 font-bold mb-0">0</span></section>
+              <section className="col-auto">
+                <section className="icon icon-shape bg-primary text-white text-lg rounded-circle"><i className="bi bi-people"></i></section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section className="col-xl-3 col-sm-6 col-12">
+        <section className="card">
+          <section className="card-body">
+            <section className="row">
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Total saldo</span> <span className="h3 font-bold mb-0">$1.400</span></section>
+              <section className="col-auto">
+                <section className="icon icon-shape bg-info text-white text-lg rounded-circle"><i className="bi bi-clock-history"></i></section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section className="col-xl-3 col-sm-6 col-12">
+        <section className="card">
+          <section className="card-body">
+            <section className="row">
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">capacidad</span> <span className="h3 font-bold mb-0">95%</span></section>
+              <section className="col-auto">
+                <section className="icon icon-shape bg-warning text-white text-lg rounded-circle"><i className="bi bi-minecart-loaded"></i></section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+        <section className="contenido-placa">
+          <section className="input-group flex-nowrap">
 
-            <span class="input-group-text" id="addon-wrapping">INGRESE PLACA</span>
-            <input value={placas} onChange={(e) => setPlacas(e.target.value)} class="form-control" placeholder="Placa" />
-          </div>
-          <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">FECHA  Y HORA DE INGRESO</span>
-            <input value={value} onChange={(e) => onChange(e.target.value)} type="data" class="form-control" disabled />
-          </div>
-          <div class="input-group flex-nowrap">
-            <button onClick={postData}  class=" btns botonIngresar">INGRESAR</button>
-          </div>
-        </div>
-      <div class="bd-example">
-        <table class="table table-dark table-borderless">
+            <span className="input-group-text" id="addon-wrapping">INGRESE PLACA</span>
+            <input value={placas} onChange={(e) => setPlacas(e.target.value)} className="form-control" placeholder="Placa" />
+          </section>
+          <section className="input-group flex-nowrap">
+            <span className="input-group-text" id="addon-wrapping">FECHA  Y HORA DE INGRESO</span>
+            <input value={value} onChange={(e) => onChange(e.target.value)} type="data" className="form-control" disabled />
+          </section>
+          <section className="input-group flex-nowrap">
+            <button onClick={postData}  className=" btns botonIngresar">INGRESAR</button>
+          </section>
+        </section>
+      <section className="bd-example">
+        <table className="table table-dark table-borderless">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -117,8 +118,8 @@ function Home() {
           </tbody>
 
         </table>
-      </div>
-    </div>
+      </section>
+    </section>
 
 
   )
