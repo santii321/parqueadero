@@ -9,7 +9,7 @@ const clientesModel = dataBase.define('clientes', {
     nombre: { 
         type: DataTypes.STRING },
     documento: {
-         type: DataTypes.INTEGER },
+         type: DataTypes.STRING },
     correo: { 
         type: DataTypes.STRING },
     direccion: { 
