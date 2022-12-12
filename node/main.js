@@ -2,6 +2,7 @@ import express from 'express';
 import dataBase from './database/database.js';
 import productosRoute from './routes/productosRoute.js';
 import placasRoute from './routes/placasRoute.js';
+import clientesRoute from './routes/ClientesRoute.js';
 import cors from 'cors';
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.json())
 
 app.use('/productos', productosRoute)
 app.use('/placas', placasRoute)
+app.use('/clientes', clientesRoute)
 
 try {
   await dataBase.authenticate()
