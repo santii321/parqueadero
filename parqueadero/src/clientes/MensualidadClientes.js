@@ -3,6 +3,10 @@ import '../assets/style/clientes.css'
 const MensualidadClientes = () => {
     return (
         <section className="contenedormensualidad m-2 mx-3 mt-5">
+             <section className="tituloourpricing my-5">
+                <h1 className="text-center text-warning text-uppercase">Our Pricing</h1>
+                <p className="text-center text-white">Prices are for any type of transport! Choose what service you need and our staff will do everything qualitatively.</p>
+            </section>
             <div class="cards">
                 <div className="card shadow">
                     <ul className='listasMensualidad'>
