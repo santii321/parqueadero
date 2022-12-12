@@ -15,11 +15,7 @@ const clientesModel = dataBase.define('clientes', {
     direccion: { 
         type: DataTypes.STRING },
     telefono: { 
-        type: DataTypes.STRING },
-    createdAt: { 
-        type: DataTypes.DATE },
-    updatedAt: { 
-        type: DataTypes.DATE },
+        type: DataTypes.STRING }
 
 })
 
