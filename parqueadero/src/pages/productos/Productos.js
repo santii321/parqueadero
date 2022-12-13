@@ -5,7 +5,7 @@ import Card from "../../Productos/Card";
 function Productos() {
   return (
     <section className="section-productos">
-      <Link className="btn btn-agregar" to="/Login">
+      <Link className="btn btn-agregar" to="/AgregarProductos">
         AGREGAR
       </Link>
       <Link className="btn btn-modificar" to="/EditarEliminar">

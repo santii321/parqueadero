@@ -28,7 +28,7 @@ function EditarEliminar(){
     return(
         <section className='w-100 d-flex  flex-wrap'>{
             productos.map(productos =>(
-                <section className='w-25 py-1 card card__producto d-flex aling-items-center'>
+                <section className='w-25 py-1 card card__producto d-flex'>
                     <section className='card__imagen d-flex '>
                         <img className='card__imagen-img rounded w-100' src={productos.imagen} alt="Imagen Producto"/>
                     </section>
@@ -45,8 +45,7 @@ function EditarEliminar(){
                             </p>
                         </section>
                         
-                    
-                        <section className='w-100 d-flex  justyfy-contente-between section-btns'>
+                        <section className='w-100 d-flex section-btns'>
                             <Link to={`/EditarProductos/${productos.id}`} className="btn bg-primary btn-editar "><Icon css="" icon={faEdit}/></Link>
                             <button className="btn bg-danger btn-eliminar" onClick={ ()=>deleteProducto(productos.id)}><Icon css="" icon={faTrash} /></button>
                         </section>
