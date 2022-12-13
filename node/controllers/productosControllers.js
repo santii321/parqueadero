@@ -52,7 +52,7 @@ const editarProducto = async (req, res) => {
 
 const eliminarProducto = async (req, res) => {
     try {
-        await Producto.destroy(red.body, {where: {id: req.params.id}});
+        await Producto.destroy({where: {id: req.params.id}});
         res.json({
             messege: "se ha eliminado correctamente el producto"
         })

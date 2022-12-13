@@ -29,7 +29,7 @@ const Card = () =>{
                         {producto.descripcion}
                     </p>
                     <p>
-                        {producto.precio}
+                        {new Intl.NumberFormat("col").format(producto.precio) }
                     </p>
                     
                     </section>

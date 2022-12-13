@@ -6,12 +6,11 @@
     margin-bottom: 2%;
 }
 
-.section-agregar__form{
-    gap: 10px;
-}
 
 .section-agregar__form span{
     width: 30%;
+    height: 7vh !important;
+
 }
 
 .section-agregar__form section{
@@ -20,6 +19,7 @@
 
 .section-agregar__form input{
     width: 70% !important;
+    height: 7vh !important;
 }
 
 .btn-almacenar{
