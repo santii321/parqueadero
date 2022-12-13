@@ -39,7 +39,7 @@ const mostrarProducto = async (req, res) => {
 
 const editarProducto = async (req, res) => {
     try {
-        await Producto.update(red.body, {where: {id: req.params.id}});
+        await Producto.update(req.body, {where: {id: req.params.id}});
         res.json({
             messege: "se ha modificado correctamente el producto"
         })

@@ -23,7 +23,7 @@ function App() {
           <Route path="NuevoCliente" element={<NuevoCliente />} />
           <Route path="Login" element={<Login />} />
           <Route path="AgregarProductos" element={<AgregarProductos />} />
-          <Route path="EditarEliminar" element={<EditarEliminar />} />
+          <Route path="EditarEliminar/" element={<EditarEliminar />} />
           <Route path="EditarProductos/:id" element={<EditarProductos />} />
           <Route path="*" element={<NoPage />} />
         </Route>
