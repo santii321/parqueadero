@@ -4,6 +4,7 @@ import '../assets/style/clientes.css'
 import TestimoniosClientes from "../clientes/TestimoniosClientes.js";
 import TablaClientes from "../clientes/TablaClientes.js";
 
+
 function NuevoCliente() {
     return(
          <section className="d-block w-100">
@@ -13,6 +14,8 @@ function NuevoCliente() {
           <TestimoniosClientes />
           <FormularioClientes />
           <TablaClientes />
+                    
+        
 
         </section>
         

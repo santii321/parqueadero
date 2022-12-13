@@ -80,6 +80,7 @@
     width: 100%;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -267,6 +268,9 @@
 
 /*!--------------------------------------------TESTIMONIOS ----------------------------------------------*/
 
+.contenedoropiniones{
+    margin-top: 1rem;
+}
  .opiniones{
     background-color: white;
     margin: 0 20px;
@@ -274,6 +278,7 @@
     border-radius: 20px;
     border: 0;
     width: 90%;
+    margin-top: 2rem;
  }
   
  .card-img-top{
