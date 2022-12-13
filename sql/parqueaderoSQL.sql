@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-12-2022 a las 15:12:37
+-- Tiempo de generación: 13-12-2022 a las 15:39:47
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 7.4.30
 
@@ -54,18 +54,6 @@ CREATE TABLE `placas` (
   `updatedAt` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `placas`
---
-
-INSERT INTO `placas` (`id`, `placa`, `estado`, `fecha_ingreso`, `fecha_salida`, `createdAt`, `updatedAt`) VALUES
-(1, 'Fcms0333', '1', '2022-12-08 08:20:16', NULL, '2022-12-08', '2022-12-08'),
-(2, 'fcm', '1', '2022-12-08 08:38:14', NULL, '2022-12-08', '2022-12-08'),
-(3, 'xxxxxx', '1', '2022-12-08 08:43:38', NULL, '2022-12-08', '2022-12-08'),
-(4, 'zzzzzzs', '1', '2022-12-08 08:48:10', NULL, '2022-12-08', '2022-12-08'),
-(5, 'zzzzzzs', '1', '2022-12-08 08:48:16', NULL, '2022-12-08', '2022-12-08'),
-(6, 'lss', '1', '2022-12-08 09:07:53', NULL, '2022-12-08', '2022-12-08');
-
 -- --------------------------------------------------------
 
 --
@@ -113,7 +101,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `placas`
 --
 ALTER TABLE `placas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`

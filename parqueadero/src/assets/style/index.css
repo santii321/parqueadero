@@ -95,15 +95,17 @@ input.form-control {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     border-width: 1px 0 0;
-    background: beige;
+    background: white;
 
 }
 tbody {
     background: black;
     color: yellow;
+    text-transform: uppercase;
 }
 thead {
     background: yellow;
+
 }
 
 
