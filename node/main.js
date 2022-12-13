@@ -17,7 +17,7 @@ app.use('/clientes', clientesRoute)
 
 try {
   await dataBase.authenticate()
-  console.log(`Conección exitosa a la base de datos`)
+  console.log(`Conexión exitosa a la base de datos`)
 } catch (error) {
   console.log(`No se pudo conectar a la base de datos ${error}`)
 }
