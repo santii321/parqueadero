@@ -26,6 +26,8 @@ function TablaClientes () {
               <th scope="col">Correo</th>
               <th scope="col">Dirección</th>
               <th scope="col">Telefono</th>
+
+              <th></th>
             </tr>
           </thead>
           <tbody>

@@ -1,14 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
+import logoChamos from "../assets/images/logoChamos.png"
 
 const Layout = () => {
   return (
     <section className="container-fluid">
       <section className="row">
         <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block sidebar collapse">
-          <img src="https://seeklogo.com/images/T/ting-avert-moto-logo-8DB6905019-seeklogo.com.png" className="logo"/>
-          <h6 className="sidebar-heading px-3 mt-4 mb-1 text-muted text-uppercase">
-              <span>Motos Chamo</span>
-            </h6>
+          <img src={logoChamos} className="logo"/>
           <section className="position-sticky pt-3 sidebar-sticky">
             <ul className="nav flex-column">
               <li className="nav-item">
