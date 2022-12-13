@@ -12,6 +12,7 @@ const FormularioClientes = () => {
     const[direccion, setDireccion]=useState('');
     const[telefono, setTelefono]=useState('');
     const navigate = useNavigate();
+  
 
     const postCliente = async (e)=>{
         e.preventDefault()
@@ -23,11 +24,12 @@ const FormularioClientes = () => {
             telefono: telefono
         })
         navigate('/NuevoCliente')
+ 
     }
 
     return (
         <section className="contenedor m-2 mx-3 mt-5">
-            <form className="contact w-50 d-flex flex-column" id="contact" action="" onSubmit={postCliente}>
+            <form className="contact w-50 d-flex flex-column" id="contact" onSubmit={postCliente} >
                 <h3 className="text-center text-uppercase">Nuevo Cliente</h3>
                 <fieldset className='input-group flex-nowrap'>
                     <span className='input-group-text' id='addon-wrapping'>NOMBRE</span>
@@ -52,6 +54,8 @@ const FormularioClientes = () => {
                 <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">Guardar</button>
 
             </form>
+
+            
         </section>
 
       

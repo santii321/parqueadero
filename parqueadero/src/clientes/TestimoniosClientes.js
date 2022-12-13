@@ -52,7 +52,6 @@ const TestimoniosClientes = () => {
                                     </section>
                                 </section>
                             </section>
-
                         </section>
                     </div>
                     <div class="carousel-item active">
@@ -95,6 +94,46 @@ const TestimoniosClientes = () => {
                             </section>
                         </section>
                     </div>
+                    <div class="carousel-item active">
+                        <section className="row">
+                            <section className="col-md-4 mb-3">
+                                <section className="card opiniones text-center">
+                                    <img className="card-img-top" src="https://dam.muyinteresante.com.mx/wp-content/uploads/2018/05/fotos-de-perfil-son-mejor-elegidas-por-personas-extranas-afirma-estudio.jpg" alt="" />
+                                    <section className="card-body">
+                                        <h4>Ronnie leey</h4>
+                                        <h4><span>Project Manager</span></h4>
+                                        <p className="card-text">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section className="col-md-4 mb-3">
+                                <section className="card opiniones text-center">
+                                    <img className="card-img-top" src="https://dam.muyinteresante.com.mx/wp-content/uploads/2018/05/fotos-de-perfil-son-mejor-elegidas-por-personas-extranas-afirma-estudio.jpg" alt="" />
+                                    <section className="card-body">
+                                        <h4>Ronnie leey</h4>
+                                        <h4><span>Project Manager</span></h4>
+                                        <p className="card-text">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                            <section className="col-md-4 mb-3">
+                                <section className="card opiniones text-center">
+                                    <img className="card-img-top" src="https://dam.muyinteresante.com.mx/wp-content/uploads/2018/05/fotos-de-perfil-son-mejor-elegidas-por-personas-extranas-afirma-estudio.jpg" alt="" />
+                                    <section className="card-body">
+                                        <h4>Ronnie leey</h4>
+                                        <h4><span>Project Manager</span></h4>
+                                        <p className="card-text">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </div>                  
                 </div>
             </div>
         </section>

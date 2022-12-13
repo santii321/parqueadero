@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import  axios  from "axios";
 
 const url= 'http://localhost:3100/clientes';
 
 
-const TablaClientes = () =>{
+function TablaClientes () {
   const [clientes, setClientes] = useState([]);
-  useEffect(() => {
-    getClientes()
-  },[])
+  
 
-  const getClientes = async () =>{
-    const res = await axios.get(url);
-    setClientes(res.data);
+  function getClientes() {
+    fetch(url)
+     .then(res => res.json())
+     .then(res => setClientes(res))
   }
-    
+
+  getClientes()
     return(
         <div class="bd-example">
         <table class="table table-dark table-borderless">
