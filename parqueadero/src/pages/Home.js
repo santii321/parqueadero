@@ -3,16 +3,16 @@ import axios from 'axios';
 import { async } from 'q';
 
 function Home() {
-  const [value, onChange] = useState(new Date().toLocaleString());
+  const [value, onChange] = useState('');
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
   function getPlaca() {
-    fetch('http://localhost:3100/placas')
+    /* fetch('http://localhost:3100/placas')
       .then(res => res.json())
-      .then(res => setPlaca(res))
+      .then(res => setPlaca(res)) */
 
   }
-  getPlaca()
+  // getPlaca()
   
   const postData = async () => {
     if (placas === '') {

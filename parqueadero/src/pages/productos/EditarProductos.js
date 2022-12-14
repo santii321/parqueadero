@@ -34,10 +34,10 @@ function EditarProductos(){
     }
 
     useEffect( ()=>{
-        getProductoId();
-    })
+        getProductoById();
+    }, [])
 
-    const getProductoId = async () =>{
+    const getProductoById = async () =>{
         const res = await axios.get(url + id)
         setImagen(res.data.imagen)
         setNombre(res.data.nombre)
