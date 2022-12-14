@@ -1,5 +1,6 @@
 import '../../assets/style/productos/agregarProducto.css';
 import AgregarProducto from "../../Productos/AgregarProducto.js";
+
 function AgregarProductos() {
     return(
         <>

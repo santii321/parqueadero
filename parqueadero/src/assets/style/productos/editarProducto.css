@@ -1,4 +1,13 @@
 .btn-editar, .btn-eliminar{
     border-radius: 10px;
-    margin: 0 1rem;
+    margin: 0 1rem 2%;
+}
+
+.section-btns{
+    gap: 45%;
+}
+
+.section-conenido{
+    width: 98% !important;
+    margin: 0 1% 2%;
 }

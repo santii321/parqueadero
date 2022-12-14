@@ -24,7 +24,12 @@ const FormularioClientes = () => {
             telefono: telefono
         })
         navigate('/NuevoCliente')
- 
+            setNombre('');
+            setDocumento('');
+            setCorreo('');
+            setDireccion('');
+            setTelefono('');
+        
     }
 
     return (

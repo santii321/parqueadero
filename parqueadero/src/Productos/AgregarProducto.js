@@ -10,7 +10,7 @@ const AgregarProducto = () =>{
     const [nombre, setNombre] = useState('');
     const [descripcion, setDescripcion] = useState('');
     const [precio, setPrecio] = useState('');
-    const [cantidad, setcantidad] = useState('');
+    const [cantidad, setCantidad] = useState('');
     const navigate = useNavigate();
 
     const postProducto = async (e) =>{
@@ -45,7 +45,7 @@ const AgregarProducto = () =>{
             </section>
             <section class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">CANTIDAD</span>
-                <input class="form-control" required value={cantidad} onChange={ (e) => setcantidad(e.target.value)}/>
+                <input class="form-control" required value={cantidad} onChange={ (e) => setCantidad(e.target.value)}/>
             </section>
             <button className='btns btn-almacenar' type='submit'>Agregar Producto</button>
         </form>
