@@ -10,7 +10,6 @@
 
 .btn-modificar{
   right: 10%;
-
 }
 
 .btn-agregar:hover,
@@ -25,9 +24,10 @@
 }
 
 .card__producto {
-  height: 70vh;
-  margin: 7% 4% 0;
-  background: transparent;
+
+  height: 80vh;
+  margin: 7% 3% 0;
+  background: transparent !important;
   border: none;
   position: relative;
   display: flex;
@@ -40,6 +40,7 @@
 
 .card__imagen {
   height: 100%;
+  border: 1px solid white;
 }
 .card__imagen img {
   object-fit: cover;

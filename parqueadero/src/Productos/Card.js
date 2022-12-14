@@ -15,22 +15,24 @@ const Card = () =>{
         setproductos(res.data);
     }
     return(
-        <section className='w-100 d-flex  flex-wrap'>{
+        <section className='w-100 d-flex flex-wrap'>{
             productos.map(producto =>(
                 <section className='w-25 card card__producto d-flex aling-items-center'>
-                    <section className='card__imagen d-flex '>
+                    <section className='w-100 card__imagen d-flex '>
                         <img className='card__imagen-img rounded w-100' src={producto.imagen} alt="Imagen Producto"/>
                     </section>
-                    <section>
-                    <h3>
-                        {producto.nombre}
-                    </h3>
-                    <p>
-                        {producto.descripcion}
-                    </p>
-                    <p>
-                        {new Intl.NumberFormat("col").format(producto.precio) }
-                    </p>
+                    <section className="w-100">
+                        <section className="w-100 section-conenido">
+                            <h3 className="">
+                                {producto.nombre}
+                            </h3>
+                            <p className="">
+                                {producto.descripcion}
+                            </p>
+                            <p className="">
+                                {new Intl.NumberFormat("col").format(producto.precio) }
+                            </p>
+                        </section>
                     
                     </section>
                     <button className='btn-agregarCarrito'>agregar al carrito</button>
