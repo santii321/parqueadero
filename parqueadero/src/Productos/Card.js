@@ -15,9 +15,9 @@ const Card = () =>{
         setproductos(res.data);
     }
     return(
-        <section className='w-100 d-flex flex-wrap'>{
+        <section className='w-100 d-flex justify-content-around flex-wrap'>{
             productos.map(producto =>(
-                <section className='w-25 card card__producto d-flex aling-items-center'>
+                <section className='w-25 card card__producto '>
                     <section className='w-100 card__imagen d-flex '>
                         <img className='card__imagen-img rounded w-100' src={producto.imagen} alt="Imagen Producto"/>
                     </section>

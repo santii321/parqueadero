@@ -6,7 +6,7 @@
 .btn-agregar, .btn-modificar {
   width: auto !important;
   text-transform: uppercase;
-  background: #ffff00;
+  background: #ffff00 !important;
   font-weight: 500;
   color: black !important;
 }
@@ -14,12 +14,12 @@
 .btn-agregar:hover,
 .btn-modificar:hover,
 .btn-agregarCarrito:hover {
-  background-color: rgb(255, 217, 0);
+  background-color: rgb(255, 217, 0) !important;
 }
 .btn-agregar:active,
 .btn-modificar:active,
 .btn-agregarCarrito:active {
-  background: rgb(255, 217, 0);
+  background: rgb(255, 217, 0) !important;
 }
 
 .card__producto {
@@ -38,7 +38,6 @@
 
 .card__imagen {
   height: 100%;
-  border: 1px solid white;
 }
 .card__imagen img {
   object-fit: cover;
