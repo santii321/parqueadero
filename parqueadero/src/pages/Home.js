@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios';
+import { async } from 'q';
 
 function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
@@ -13,7 +14,7 @@ function Home() {
   }
   getPlaca()
   
-  const postData = () => {
+  const postData = async () => {
     if (placas === '') {
       alert("todos los campos son obligatorios")
     return

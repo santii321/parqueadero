@@ -1,5 +1,4 @@
 import {useState } from "react";
-import  axios  from "axios";
 
 const url= 'http://localhost:3100/clientes';
 
@@ -26,6 +25,8 @@ function TablaClientes () {
               <th scope="col">Correo</th>
               <th scope="col">Dirección</th>
               <th scope="col">Telefono</th>
+
+              <th></th>
             </tr>
           </thead>
           <tbody>
