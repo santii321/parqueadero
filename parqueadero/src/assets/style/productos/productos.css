@@ -1,15 +1,14 @@
+.section-btns{
+  gap: 10px;
+  justify-content: end;
+}
+
 .btn-agregar, .btn-modificar {
-  margin-bottom: 1rem;
-  position: absolute;
-  right: 2%;
-  top: 0;
+  width: auto !important;
   text-transform: uppercase;
   background: #ffff00;
   font-weight: 500;
-}
-
-.btn-modificar{
-  right: 10%;
+  color: black !important;
 }
 
 .btn-agregar:hover,
@@ -24,9 +23,8 @@
 }
 
 .card__producto {
-
   height: 80vh;
-  margin: 7% 3% 0;
+  margin: 3% 3% 0;
   background: transparent !important;
   border: none;
   position: relative;
@@ -54,5 +52,5 @@
   border-radius: 10px;
   text-transform: uppercase;
   background: #ffff00;
-  font-weight: 500;
+  font-weight: bold;
 }

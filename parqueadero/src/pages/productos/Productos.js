@@ -5,12 +5,15 @@ import Card from "../../Productos/Card";
 function Productos() {
   return (
     <section className="w-100 section-productos">
-      <Link className="btn btn-agregar" to="/AgregarProductos">
-        AGREGAR
-      </Link>
-      <Link className="btn btn-modificar" to="/EditarEliminar">
-        MODOFICAR
-      </Link>
+      <section className="d-flex section-btns">
+        <Link className="btn btn-agregar" to="/AgregarProductos">
+          AGREGAR
+        </Link>
+        <Link className="btn btn-modificar" to="/EditarEliminar">
+          MODOFICAR
+        </Link>
+      </section>
+      
       <section className="w-100 d-flex justify-content-between">
         <Card />
       </section>
