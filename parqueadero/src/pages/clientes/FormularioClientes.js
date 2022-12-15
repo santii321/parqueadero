@@ -1,7 +1,7 @@
 import '../../assets/style/clientes.css';
 import {useState} from 'react';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import TablaClientes from '../../clientes/TablaClientes';
 
 const url= 'http://localhost:3100/clientes';
@@ -34,6 +34,7 @@ const FormularioClientes = () => {
 
     return (
         <section className="contenedor m-2 mx-3 mt-5">
+            <Link className='btn' to="/NuevoCliente">Regresar</Link>
             <form className="contact w-50 d-flex flex-column" id="contact" onSubmit={postCliente} >
                 <h3 className="text-center text-uppercase">Nuevo Cliente</h3>
                 <fieldset className='input-group flex-nowrap'>
