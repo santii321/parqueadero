@@ -1,9 +1,9 @@
 import {useState } from "react";
 import  axios  from "axios";
-import { Link } from "react-router-dom";
 import {faEdit} from "@fortawesome/free-solid-svg-icons";
 import {faTrash} from "@fortawesome/free-solid-svg-icons";
 import Icon from "../Productos/Icon";
+import { Link } from "react-router-dom";
 
 const url= 'http://localhost:3100/clientes/';
 
@@ -47,9 +47,9 @@ function TablaClientes () {
                 <th>{cliente.correo}</th>
                 <th>{cliente.direccion}</th>
                 <th>{cliente.telefono}</th>
-                <th> 
-                  <Link to={`/EditarCliente/${cliente.id}`} className=" btn bg-primary btn-editar"><Icon css="" icon={faEdit}/></Link>
-                  <button className=" btn btn-eliminar bg-danger" onClick={()=>deleteClientes(cliente.id)}><Icon css="" icon={faTrash} /></button>
+                <th className="d-flex justify-content-center"> 
+                  <button className="btn btn-editar "><Link to={`/EditarCliente/${cliente.id}`} className="btn-editar"><Icon css="" icon={faEdit} /></Link></button>
+                  <button className=" btn btn-eliminar " onClick={()=>deleteClientes(cliente.id)}><Icon css="" icon={faTrash} /></button>
                 </th>
                 <th> </th>
 

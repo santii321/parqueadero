@@ -29,12 +29,12 @@ const Card = () =>{
               <section className="w-100 section-btns d-flex justify-content-between">
                 <Link
                   to={`/EditarProductos/${productos.id}`}
-                  className="btn bg-primary btn-editar "
+                  className="btn btn-editar "
                 >
                   <Icon css="" icon={faEdit} />
                 </Link>
                 <button
-                  className="btn bg-danger btn-eliminar"
+                  className="btn btn-eliminar"
                   onClick={() => deleteProducto(productos.id)}
                 >
                   <Icon css="" icon={faTrash} />
