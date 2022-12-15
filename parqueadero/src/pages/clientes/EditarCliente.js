@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const url ='http://localhost:3100/clientes/';
 
-function EditarClientes(){
+function EditarCliente(){
 
     const[nombre, setNombre]=useState('');
     const[documento, setDocumento]=useState('');
@@ -15,6 +15,7 @@ function EditarClientes(){
     const {id} = useParams();
 
     const updateCliente = async (e) =>{
+        e.preventDefault();
         await axios.put(url + id,{
             nombre,
             documento,
@@ -72,5 +73,5 @@ function EditarClientes(){
 
 }
 
-export default EditarClientes;
+export default EditarCliente;
 

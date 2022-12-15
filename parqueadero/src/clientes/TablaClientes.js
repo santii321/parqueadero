@@ -2,7 +2,7 @@ import {useState } from "react";
 import  axios  from "axios";
 import { Link } from "react-router-dom";
 
-const url= 'http://localhost:3100/clientes';
+const url= 'http://localhost:3100/clientes/';
 
 
 function TablaClientes () {
@@ -16,8 +16,8 @@ function TablaClientes () {
   }
 
   const deleteClientes = async (id) =>{
-     await axios.delete(`${url}${id}`)
-     getClientes()
+     axios.delete(url + id, {
+     },[])
   }
 
   getClientes()
@@ -45,8 +45,8 @@ function TablaClientes () {
                 <th>{cliente.direccion}</th>
                 <th>{cliente.telefono}</th>
                 <th> 
-                  <Link to={`/EditarClientes/${cliente.id}`} className="btn bg-primary">Editar</Link>
-                  <button className=" btn bg-danger" onClick={()=>{deleteClientes(cliente.id)}}>Eliminar</button>
+                  <Link to={`/EditarCliente/${cliente.id}`} className="btn bg-primary">Editar</Link>
+                  <button className="btn bg-danger" onClick={()=>deleteClientes(cliente.id)}>ELIMINAR</button>
                 </th>
                 <th> </th>
 

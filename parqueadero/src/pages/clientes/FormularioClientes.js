@@ -1,7 +1,8 @@
-import '../assets/style/clientes.css';
+import '../../assets/style/clientes.css';
 import {useState} from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
+import TablaClientes from '../../clientes/TablaClientes';
 
 const url= 'http://localhost:3100/clientes';
 
@@ -23,7 +24,6 @@ const FormularioClientes = () => {
             direccion: direccion,
             telefono: telefono
         })
-        navigate('/NuevoCliente')
             setNombre('');
             setDocumento('');
             setCorreo('');
@@ -56,10 +56,11 @@ const FormularioClientes = () => {
                     <span className='input-group-text' id='addon-wrapping'>TELEFONO</span>
                     <input type="text" tabindex="5" value={telefono} onChange={(e)=> setTelefono(e.target.value)} required autofocus />
                 </fieldset>
-                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">Guardar</button>
-
+                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">Agregar Cliente</button>
             </form>
-
+            <section>
+            <TablaClientes />
+            </section>
             
         </section>
 
