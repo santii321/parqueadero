@@ -6,9 +6,13 @@ import Home from "./pages/Home";
 import Informes from "./pages/Informes";
 import Productos from "./pages/productos/Productos";
 import AgregarProductos from "./pages/productos/AgregarProductos";
-import NuevoCliente from "./pages/NuevoCliente";
+import NuevoCliente from "./pages/clientes/NuevoCliente";
 import NoPage from "./pages/NoPage";
 import EditarProductos from "./pages/productos/EditarProductos";
+import EditarCliente from "./pages/clientes/EditarCliente";
+import FormularioClientes from "./pages/clientes/FormularioClientes";
+
+
 
 function App() {
   return (
@@ -21,6 +25,8 @@ function App() {
           <Route path="NuevoCliente" element={<NuevoCliente />} />
           <Route path="AgregarProductos" element={<AgregarProductos />} />
           <Route path="EditarProductos/:id" element={<EditarProductos />} />
+          <Route path="FormularioClientes" element={<FormularioClientes />} />
+          <Route path="EditarCliente/:id" element={<EditarCliente />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

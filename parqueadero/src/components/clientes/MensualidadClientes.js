@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import '../../assets/style/clientes.css'
+
 
 const MensualidadClientes = () => {
     return (
@@ -15,7 +17,7 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Vigilancia 24/7</li>
                         <li className="bottom-bar">Reserva en línea</li>
                         <li className="bottom-bar">Red Extensa y Avanzada</li>
-                        <li><button className="btn">Elegir plan</button></li>
+                        <li><Link to="/FormularioClientes" className="btn">Elegir plan</Link></li>
                     </ul>
                 </div>
                 <div className="card active">
@@ -25,7 +27,7 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Moto Spa</li>
                         <li className="bottom-bar">Reserva en línea</li>
                         <li className="bottom-bar">Cambio de aceite</li>
-                        <li><button className="btn active-btn">Elegir plan</button></li>
+                        <li><Link to="/FormularioClientes" className="btn active-btn">Elegir plan</Link></li>
                     </ul>
                 </div>
                 <div className="card shadow">
@@ -35,7 +37,7 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Renovación de SOAT</li>
                         <li className="bottom-bar">Reserva en línea</li>
                         <li className="bottom-bar">Descuentos en accesorios</li>
-                        <li><button className="btn">Elegir plan</button></li>
+                        <li><Link to="/FormularioClientes" className="btn">Elegir plan</Link></li>
                     </ul>
                 </div>
             </div>
