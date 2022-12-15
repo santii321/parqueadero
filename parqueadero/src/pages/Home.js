@@ -27,7 +27,7 @@ function Home() {
 
     axios.post(`http://localhost:3100/placas`, {
       placa: placas,
-      },[])
+      })
       .then((res) => {
         setPlacas('');
       })
