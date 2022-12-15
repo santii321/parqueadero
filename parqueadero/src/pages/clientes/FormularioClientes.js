@@ -2,7 +2,8 @@ import '../../assets/style/clientes.css';
 import {useState} from 'react';
 import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
-import TablaClientes from '../../clientes/TablaClientes';
+import TablaClientes from '../../components/clientes/TablaClientes';
+
 
 const url= 'http://localhost:3100/clientes';
 

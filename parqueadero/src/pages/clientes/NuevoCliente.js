@@ -1,7 +1,7 @@
 
-import MensualidadClientes from "../../clientes/MensualidadClientes.js"
+import MensualidadClientes from '../../components/clientes/MensualidadClientes.js';
 import '../../assets/style/clientes.css'
-import TestimoniosClientes from "../../clientes/TestimoniosClientes.js";
+import TestimoniosClientes from "../../components/clientes/TestimoniosClientes.js";
 
 
 
@@ -9,12 +9,9 @@ function NuevoCliente() {
     return(
          <section className="d-block w-100">
 
-          
-          <MensualidadClientes />
-          <TestimoniosClientes />
-                    
+        <MensualidadClientes />
+        <TestimoniosClientes />
         
-
         </section>
         
     )

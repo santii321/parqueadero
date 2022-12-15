@@ -1,9 +1,6 @@
-<<<<<<< HEAD:parqueadero/src/clientes/MensualidadClientes.js
 import { Link } from 'react-router-dom';
-import '../assets/style/clientes.css'
-=======
 import '../../assets/style/clientes.css'
->>>>>>> main:parqueadero/src/components/clientes/MensualidadClientes.js
+
 
 const MensualidadClientes = () => {
     return (
