@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExclamation, faExclamationCircle, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { async } from 'q';
 
 function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
+
   function getPlaca() {
     fetch('http://localhost:3100/placas')
       .then(res => res.json())
       .then(res => setPlaca(res))
 
   }
-  getPlaca()
+    getPlaca()
+
   
   const postData = async () => {
     if (placas === '') {
@@ -22,12 +26,22 @@ function Home() {
 
     axios.post(`http://localhost:3100/placas`, {
       placa: placas,
-      })
+      },[])
       .then((res) => {
         setPlacas('');
       })
 
 }
+const putData = async (id) => {
+  axios.put('http://localhost:3100/placas/'+id, {
+    estado: "1",
+    fecha_salida: new Date()
+    })
+}
+const deleteData = async (id) => {
+  axios.delete('http://localhost:3100/placas/'+id, {
+    })
+} 
 
 
   return (
@@ -102,6 +116,7 @@ function Home() {
               <th scope="col">Placa</th>
               <th scope="col">Hora de ingreso</th>
               <th scope="col">Estado</th>
+              <th scope="col">Acción</th>
             </tr>
           </thead>
           <tbody>
@@ -110,11 +125,13 @@ function Home() {
                 <th>{placas.id}</th>
                 <th>{placas.placa}</th>
                 <th>{placas.fecha_ingreso}</th>
-                <th> </th>
+                <th>{placas.estado === "1" && <p>{placas.fecha_salida}</p>}{placas.estado === "0" && <button onClick={ ()=>putData(placas.id)} className="fin" ><FontAwesomeIcon className='color-icon' icon={faExclamationCircle} /> Terminar parqueo</button>}</th>
+                <th><button onClick={ ()=>deleteData(placas.id)} className="eliminar"  ><FontAwesomeIcon icon={faTrash} /> Eliminar</button></th>
 
               </tr>
 
             ))}
+            
 
           </tbody>
 
