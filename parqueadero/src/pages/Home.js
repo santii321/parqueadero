@@ -37,11 +37,11 @@ const putData = async (id) => {
   axios.put('http://localhost:3100/placas/'+id, {
     estado: "1",
     fecha_salida: new Date()
-    })
+    },[])
 }
 const deleteData = async (id) => {
   axios.delete('http://localhost:3100/placas/'+id, {
-    })
+    }, [])
 } 
 
 

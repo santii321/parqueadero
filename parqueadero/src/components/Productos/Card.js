@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Icon from './Icon';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const url ='http://localhost:3100/productos';
+const url ='http://localhost:3100/productos/';
 
 const Card = () =>{
     const [productos, setproductos] = useState([]);
