@@ -1,4 +1,4 @@
-import '../assets/style/clientes.css'
+import '../../assets/style/clientes.css'
 
 const MensualidadClientes = () => {
     return (

@@ -6,13 +6,6 @@ const url ='http://localhost:3100/productos/';
 
 
 function EditarProductos(){
-    // const [producto, setproducto] = useState({
-    //     imagen: '',
-    //     nombre: '',
-    //     descripcion: '',
-    //     precio: '',
-    //     cantidad: ''
-    // })
     const [imagen, setImagen] = useState('');
     const [nombre, setNombre] = useState('');
     const [descripcion, setDescripcion] = useState('');
@@ -34,10 +27,10 @@ function EditarProductos(){
     }
 
     useEffect( ()=>{
-        getProductoId();
-    })
+        getProductoById();
+    }, [])
 
-    const getProductoId = async () =>{
+    const getProductoById = async () =>{
         const res = await axios.get(url + id)
         setImagen(res.data.imagen)
         setNombre(res.data.nombre)
