@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamation, faExclamationCircle, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { async } from 'q';
 
+
 function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
   const [placa, setPlaca] = useState([])

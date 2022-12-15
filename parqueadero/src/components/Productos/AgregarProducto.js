@@ -16,11 +16,11 @@ const AgregarProducto = () =>{
     const postProducto = async (e) =>{
         e.preventDefault()
         await axios.post(url, {
-            imagen: imagen,
-            nombre: nombre,
-            descripcion: descripcion,
-            precio: precio,
-            cantidad: cantidad
+            imagen,
+            nombre,
+            descripcion,
+            precio,
+            cantidad
         })
         navigate('/Productos')
     }

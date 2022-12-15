@@ -15,7 +15,7 @@ function EditarProductos(){
     const {id} = useParams();
 
     const updateProducto = async (e) =>{
-
+        e.preventDefault();
         await axios.put(url + id, {
             imagen,
             nombre,
@@ -27,10 +27,10 @@ function EditarProductos(){
     }
 
     useEffect( ()=>{
-        getProductoId();
-    })
+        getProductoById();
+    }, [])
 
-    const getProductoId = async () =>{
+    const getProductoById = async () =>{
         const res = await axios.get(url + id)
         setImagen(res.data.imagen)
         setNombre(res.data.nombre)
