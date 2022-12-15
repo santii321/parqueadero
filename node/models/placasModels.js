@@ -12,11 +12,15 @@ const Placas = dataBase.define('placas', {
     type: Sequelize.DATE,
     get: function() { 
       return this.getDataValue('fecha_ingreso')
-        .toLocaleString();
+        ?.toLocaleString();
     }
   },
   fecha_salida: {
-    type: DataTypes.STRING
+    type: Sequelize.DATE,
+    get: function() { 
+      return this.getDataValue('fecha_salida')
+        ?.toLocaleString();
+    }
   }
 });
 
