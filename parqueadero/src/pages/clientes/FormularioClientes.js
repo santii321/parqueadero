@@ -5,7 +5,7 @@ import {Link, useNavigate} from 'react-router-dom';
 import TablaClientes from '../../components/clientes/TablaClientes';
 
 
-const url= 'http://localhost:3100/clientes';
+const url= 'http://localhost:3100/clientes/';
 
 const FormularioClientes = () => {
     const[nombre, setNombre]=useState('');
