@@ -6,13 +6,6 @@ const url ='http://localhost:3100/productos/';
 
 
 function EditarProductos(){
-    // const [producto, setproducto] = useState({
-    //     imagen: '',
-    //     nombre: '',
-    //     descripcion: '',
-    //     precio: '',
-    //     cantidad: ''
-    // })
     const [imagen, setImagen] = useState('');
     const [nombre, setNombre] = useState('');
     const [descripcion, setDescripcion] = useState('');

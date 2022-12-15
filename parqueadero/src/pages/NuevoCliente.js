@@ -1,8 +1,8 @@
-import FormularioClientes from "../clientes/FormularioClientes.js"
-import MensualidadClientes from "../clientes/MensualidadClientes.js"
+import FormularioClientes from "../components/clientes/FormularioClientes.js"
+import MensualidadClientes from "../components/clientes/MensualidadClientes.js"
 import '../assets/style/clientes.css'
-import TestimoniosClientes from "../clientes/TestimoniosClientes.js";
-import TablaClientes from "../clientes/TablaClientes.js";
+import TestimoniosClientes from "../components/clientes/TestimoniosClientes.js";
+import TablaClientes from "../components/clientes/TablaClientes.js";
 
 
 function NuevoCliente() {

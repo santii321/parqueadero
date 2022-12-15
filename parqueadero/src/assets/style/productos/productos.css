@@ -23,7 +23,7 @@
 }
 
 .card__producto {
-  height: 80vh;
+  height: 85vh;
   margin: 3% 3% 0;
   background: transparent !important;
   border: none;
@@ -40,12 +40,18 @@
   height: 100%;
 }
 .card__imagen img {
-  object-fit: cover;
+  height: 35vh;
+  object-fit: contain;
+  /* border: 1px solid white; */
+}
+
+.section-conenido p{
+  height: 7vh;
 }
 
 .btn-agregarCarrito {
   width: auto;
-  height: 4rem;
+  height: 3rem;
   margin: 0 0 5%;
   font-size: 14px;
   border-radius: 10px;

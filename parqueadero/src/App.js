@@ -8,7 +8,6 @@ import Productos from "./pages/productos/Productos";
 import AgregarProductos from "./pages/productos/AgregarProductos";
 import NuevoCliente from "./pages/NuevoCliente";
 import NoPage from "./pages/NoPage";
-import EditarEliminar from "./pages/productos/EditarEliminar";
 import EditarProductos from "./pages/productos/EditarProductos";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <Route path="Productos" element={<Productos />} />
           <Route path="NuevoCliente" element={<NuevoCliente />} />
           <Route path="AgregarProductos" element={<AgregarProductos />} />
-          <Route path="EditarEliminar/" element={<EditarEliminar />} />
           <Route path="EditarProductos/:id" element={<EditarProductos />} />
           <Route path="*" element={<NoPage />} />
         </Route>
