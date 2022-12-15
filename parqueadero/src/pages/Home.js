@@ -6,6 +6,7 @@ function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
+  
   function getPlaca() {
     fetch('http://localhost:3100/placas')
       .then(res => res.json())
