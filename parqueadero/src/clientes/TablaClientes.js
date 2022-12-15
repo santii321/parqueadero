@@ -1,6 +1,9 @@
 import {useState } from "react";
 import  axios  from "axios";
 import { Link } from "react-router-dom";
+import {faEdit} from "@fortawesome/free-solid-svg-icons";
+import {faTrash} from "@fortawesome/free-solid-svg-icons";
+import Icon from "../Productos/Icon";
 
 const url= 'http://localhost:3100/clientes/';
 
@@ -45,8 +48,8 @@ function TablaClientes () {
                 <th>{cliente.direccion}</th>
                 <th>{cliente.telefono}</th>
                 <th> 
-                  <Link to={`/EditarCliente/${cliente.id}`} className="btn bg-primary">Editar</Link>
-                  <button className="btn bg-danger" onClick={()=>deleteClientes(cliente.id)}>ELIMINAR</button>
+                  <Link to={`/EditarCliente/${cliente.id}`} className=" btn bg-primary btn-editar"><Icon css="" icon={faEdit}/></Link>
+                  <button className=" btn btn-eliminar bg-danger" onClick={()=>deleteClientes(cliente.id)}><Icon css="" icon={faTrash} /></button>
                 </th>
                 <th> </th>
 

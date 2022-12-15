@@ -33,8 +33,9 @@ const FormularioClientes = () => {
     }
 
     return (
-        <section className="contenedor m-2 mx-3 mt-5">
-            <Link className='btn' to="/NuevoCliente">Regresar</Link>
+        <section className="contenedor ">
+            <section className="btnRegresar d-flex justify-content-end"><Link className='btn' to="/NuevoCliente">Regresar</Link></section>
+            <section className="d-flex justify-content-center mt-5">
             <form className="contact w-50 d-flex flex-column" id="contact" onSubmit={postCliente} >
                 <h3 className="text-center text-uppercase">Nuevo Cliente</h3>
                 <fieldset className='input-group flex-nowrap'>
@@ -59,6 +60,8 @@ const FormularioClientes = () => {
                 </fieldset>
                 <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">Agregar Cliente</button>
             </form>
+            </section>
+           
             <section>
             <TablaClientes />
             </section>
