@@ -9,8 +9,8 @@ const MensualidadClientes = () => {
                 <h1 className="text-center text-warning text-uppercase">Our Pricing</h1>
                 <p className="text-center text-white">Prices are for any type of transport! Choose what service you need and our staff will do everything qualitatively.</p>
             </section>
-            <div class="cards">
-                <div className="card shadow">
+            <section class="cards">
+                <section className="card shadow">
                     <ul className='listasMensualidad'>
                         <li className="pack">Basic</li>
                         <li id="basic" className="price bottom-bar">$6.000</li>
@@ -19,8 +19,8 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Red Extensa y Avanzada</li>
                         <li><Link to="/FormularioClientes" className="btn">Elegir plan</Link></li>
                     </ul>
-                </div>
-                <div className="card active">
+                </section>
+                <section className="card active">
                     <ul className='listasMensualidad'>
                         <li className="pack">Mensualidad</li>
                         <li id="professional" className="price bottom-bar">$20.000</li>
@@ -29,8 +29,8 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Cambio de aceite</li>
                         <li><Link to="/FormularioClientes" className="btn active-btn">Elegir plan</Link></li>
                     </ul>
-                </div>
-                <div className="card shadow">
+                </section>
+                <section className="card shadow">
                     <ul className='listasMensualidad'>
                         <li className="pack">Anualidad</li>
                         <li id="master" className="price bottom-bar">$110.000</li>
@@ -39,8 +39,8 @@ const MensualidadClientes = () => {
                         <li className="bottom-bar">Descuentos en accesorios</li>
                         <li><Link to="/FormularioClientes" className="btn">Elegir plan</Link></li>
                     </ul>
-                </div>
-            </div>
+                </section>
+            </section>
         </section>
     )
 }
