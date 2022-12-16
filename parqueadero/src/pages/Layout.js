@@ -10,13 +10,15 @@ const Layout = () => {
           <section className="position-sticky pt-3 sidebar-sticky">
             <ul className="nav flex-column">
               <li className="nav-item">
-                <Link className="nav-link active" to="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-home align-text-bottom" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Inicio</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Informes">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-file align-text-bottom" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  Informes
+                  <Link className="nav-link" to="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-home align-text-bottom" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  Inicio
                 </Link>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/Informes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-file align-text-bottom" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  Registrar Moto</Link>
+              </li>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Productos">
@@ -32,14 +34,14 @@ const Layout = () => {
               </li>
             </ul>
           </section>
+        <p className="w-100 p-2 text-center copy">&copy; Todos los derechos reservados</p>
         </nav>
-
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4"><section className="chartjs-size-monitor"><section className="chartjs-size-monitor-expand"><section className=""></section></section><section className="chartjs-size-monitor-shrink"><section className=""></section></section></section>
           <section className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
 
 
             <Outlet />
-
+          
           </section>
         </main>
       </section>

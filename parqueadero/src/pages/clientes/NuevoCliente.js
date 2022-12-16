@@ -9,7 +9,7 @@ import JumboSection from '../../components/clientes/JumboSection.js';
 
 function NuevoCliente() {
     return(
-         <section className="d-block w-100">
+         <section className="d-flex flex-column w-100 sectionClientes">
 
         <TestimoniosClientes />
         <JumboSection />

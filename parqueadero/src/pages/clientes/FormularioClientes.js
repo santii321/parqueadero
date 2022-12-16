@@ -45,7 +45,7 @@ const FormularioClientes = () => {
 
     return (
         <section className="contenedor ">
-            <section className="btnRegresar d-flex justify-content-end"><Link className='btn' to="/NuevoCliente">Regresar</Link></section>
+            <section className="btnRegresar d-flex justify-content-end"><Link className='btn btn-agregar' to="/NuevoCliente">Regresar</Link></section>
             <section className="d-flex justify-content-center mt-5">
             <form className="contact w-50 d-flex flex-column" id="contact" onSubmit={postCliente} >
                 <h3 className="text-center text-uppercase">Nuevo Cliente</h3>
