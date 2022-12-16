@@ -17,44 +17,46 @@ const ServiciosClientes = () => {
                         <img src={motoLavado} alt="" class="bd-placeholder-img rounded-circle" width="75"
                             height="50" />
                         <h4 class="fw-normal text-white">Lavado de moto</h4>
-                        <p class="text-center text-white"> El carnero, parte de los carneros que constituían la ofrenda a Ares</p>
+                        <p class="text-center text-white"> Lavado y alistamiento, alto cilindraje $ 15 000 full, sencillo  $10 000, productos Meguiars.</p>
                     </div>
 
 
                     <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
-                        <img src={aceite} alt="" class="bd-placeholder-img rounded-circle" width="50"
+                    <img src={bateria} alt="" class="bd-placeholder-img rounded-circle" width="50"
                             height="50" />
-                        <h4 class="fw-normal text-white">Cambio de aceite</h4>
-                        <p class="text-center text-white">Toro de Creta o la forma que adoptó Zeus cuando raptó a Europa.</p>
-                    </div>
-
-                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
-                        <img src={bateria} alt="" class="bd-placeholder-img rounded-circle" width="50"
-                            height="50" />
-                        <h4 class="fw-normal text-white">Reparación de bateria</h4>
-                        <p class="text-center text-white">Cambiantes como los gemelos que representan su imagen</p>
-                    </div>
-
-                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
-                        <img src={llave} alt="" class="bd-placeholder-img rounded-circle" width="50"
-                            height="50" />
-                        <h4 class="fw-normal text-white">Mantenimiento</h4>
-                        <p class="text-center text-white">Cangrejo enviado para ayudar a la Hidra de Lerna cuando luchaba contra
-                            Hércules</p>
-                    </div>
-
-                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
-                        <img src={dinero} alt="" class="bd-placeholder-img rounded-circle" width="50"
-                            height="50" />
-                        <h4 class="fw-normal text-white">Financiamiento</h4>
-                        <p class="text-center text-white">El León de Nemea que mató Hércules</p>
+                        <h4 class="fw-normal text-white">Peritaje</h4>
+                        <p class="text-center text-white">Se realiza alineación y desfases del chasis, escaneo del motor y se mide espesor de pintura.</p>
                     </div>
 
                     <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
                         <img src={casco} alt="" class="bd-placeholder-img rounded-circle" width="50"
                             height="50" I />
                         <h4 class="fw-normal text-white">Guardado de casco </h4>
-                        <p class="text-center text-white">Se inspira en Astrea, titánide hija de Ceo y Febe</p>
+                        <p class="text-center text-white">Se presta el servicio de guardado de cascos, en casilleros con el número de placa del vehículo</p>
+
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
+                        <img src={llave} alt="" class="bd-placeholder-img rounded-circle" width="50"
+                            height="50" />
+                        <h4 class="fw-normal text-white">Mantenimiento</h4>
+                        <p class="text-center text-white">Servicio técnico especializado en marcas BMW, DUCATI, KTM, HD, YAMAHA, SUZUKI, HONDA, KAWASAKI.</p>
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
+                        <img src={dinero} alt="" class="bd-placeholder-img rounded-circle" width="50"
+                            height="50" />
+                        <h4 class="fw-normal text-white">Financiamiento</h4>
+                        <p class="text-center text-white"> Financiación de la compra de nuestros equipos a través del sistema financiero y
+                            en especial una estrategia de renting tecnológico. </p>
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column justify-content-star align-items-center">
+                    <img src={aceite} alt="" class="bd-placeholder-img rounded-circle" width="50"
+                            height="50" />
+                        <h4 class="fw-normal text-white">Cambio de aceite</h4>
+                        <p class="text-center text-white"> Este proceso permite que todos los engranajes de la moto funcionen correctamente.
+                            Además, permite limpiar el motor y lo protege de la corrosión. </p>
                     </div>
                 </div>
             </div>

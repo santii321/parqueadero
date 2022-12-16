@@ -4,8 +4,8 @@ const JumboSection = () => {
             <h1 class="p-3 fs-2 border-top border-3 text-warning">¿QUE SERVICIOS ENCONTRAMOS?</h1>
 
             <p class="p-3 fs-4 text-center text-white">
-                "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+                "Servicios de alta calidad, al detalle y optimos. Elige Motos Chamo, para el cuidado
+                de tu vehivulo "
 
             </p>
         </section>
