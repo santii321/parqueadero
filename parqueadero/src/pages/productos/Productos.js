@@ -1,5 +1,4 @@
 import "../../assets/style/productos/productos.css";
-import "../../assets/style/productos/editarProducto.css";
 import { Link } from "react-router-dom";
 import Card from "../../components/Productos/Card";
 function Productos() {
