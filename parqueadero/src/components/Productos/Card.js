@@ -26,20 +26,7 @@ const Card = () =>{
       <section className="w-100 d-flex flex-wrap">
         {productos.map((productos) => (
           <section className="w-25  card__producto d-flex flex-column">
-              <section className="w-100 section-btns d-flex justify-content-between">
-                <Link
-                  to={`/EditarProductos/${productos.id}`}
-                  className="btn btn-editar "
-                >
-                  <Icon css="" icon={faEdit} />
-                </Link>
-                <button
-                  className="btn btn-eliminar"
-                  onClick={() => deleteProducto(productos.id)}
-                >
-                  <Icon css="" icon={faTrash} />
-                </button>
-              </section>
+              
             <section className="w-100 card__imagen d-flex ">
               <img
                 className="card__imagen-img rounded w-100"
@@ -55,8 +42,19 @@ const Card = () =>{
                   {new Intl.NumberFormat("col").format(productos.precio)}
                 </p>
               </section>
-              <section className="w-100 d-flex justify-content-center">
-                <button className="btn-agregarCarrito">agregar al carrito</button>
+              <section className="w-100 section-btns  d-flex justify-content-between">
+                <Link
+                  to={`/EditarProductos/${productos.id}`}
+                  className="btn btn-editar "
+                >
+                  <Icon css="" icon={faEdit} />
+                </Link>
+                <button
+                  className="btn btn-eliminar"
+                  onClick={() => deleteProducto(productos.id)}
+                >
+                  <Icon css="" icon={faTrash} />
+                </button>
               </section>
             </section>
           </section>
