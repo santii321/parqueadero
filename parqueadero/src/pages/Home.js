@@ -9,8 +9,7 @@ function Home() {
   const [value, onChange] = useState(new Date().toLocaleString());
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
-
-
+  const [contador, setContador] = useState(0);
   useEffect(() => {
     getPlaca()
   });
@@ -22,6 +21,7 @@ function Home() {
 
   const postData = async (e) => {
     const validar = /(\w{3,3})+(?:[\W|_]{0,1})+((\d{3,3})|(\d{2,2})+(\w{1,1}))/ig;
+    
     if (placas === '') {
       alert("todos los campos son obligatorios")
       return
@@ -29,8 +29,12 @@ function Home() {
       if (validar.test(placas)) {
         axios.post(`http://localhost:3100/placas`, {
           placa: placas,
-        })
-          .then((res) => {
+          
+        }
+       
+        )
+          .then((res) => { 
+            setContador(contador+1)
             setPlacas('');
           })
       } else {
@@ -52,6 +56,7 @@ function Home() {
   const deleteData = async (id) => {
     axios.delete('http://localhost:3100/placas/' + id, {
     })
+    setContador(contador-1)
   }
 
 
@@ -73,7 +78,7 @@ function Home() {
         <section className="card">
           <section className="card-body">
             <section className="row">
-              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Motos</span> <span className="h3 font-bold mb-0">0</span></section>
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Motos</span> <span className="h3 font-bold mb-0">{contador}</span></section>
               <section className="col-auto">
                 <section className="icon icon-shape bg-primary text-white text-lg rounded-circle"><i className="bi bi-people"></i></section>
               </section>
