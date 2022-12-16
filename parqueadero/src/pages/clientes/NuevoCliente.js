@@ -7,7 +7,7 @@ import TestimoniosClientes from "../../components/clientes/TestimoniosClientes.j
 
 function NuevoCliente() {
     return(
-         <section className="d-block w-100">
+         <section className="d-block w-100 nuevoCliente">
 
         <MensualidadClientes />
         <TestimoniosClientes />
