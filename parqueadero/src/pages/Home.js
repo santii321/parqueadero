@@ -12,41 +12,46 @@ function Home() {
 
   useEffect(() => {
     getPlaca()
-   });
+  });
 
-const getPlaca = async ()=>{
-  const response = await axios.get('http://localhost:3100/placas')
-  setPlaca(response.data)
-}
+  const getPlaca = async () => {
+    const response = await axios.get('http://localhost:3100/placas')
+    setPlaca(response.data)
+  }
 
-  
-    
-
-  
-  const postData = async () => {
+  const postData = async (e) => {
+    const validar = /(\w{3,3})+(?:[\W|_]{0,1})+((\d{3,3})|(\d{2,2})+(\w{1,1}))/ig;
     if (placas === '') {
       alert("todos los campos son obligatorios")
-    return
-    } 
-
-    axios.post(`http://localhost:3100/placas`, {
-      placa: placas,
-      })
-      .then((res) => {
+      return
+    } else {
+      if (validar.test(placas)) {
+        axios.post(`http://localhost:3100/placas`, {
+          placa: placas,
+        })
+          .then((res) => {
+            setPlacas('');
+          })
+      } else {
+        console.log("error")
         setPlacas('');
-      })
+        return
 
-}
-const putData = async (id) => {
-  axios.put('http://localhost:3100/placas/'+id, {
-    estado: "1",
-    fecha_salida: new Date()
+      }
+    }
+
+
+  }
+  const putData = async (id) => {
+    axios.put('http://localhost:3100/placas/' + id, {
+      estado: "1",
+      fecha_salida: new Date()
     })
-}
-const deleteData = async (id) => {
-  axios.delete('http://localhost:3100/placas/'+id, {
+  }
+  const deleteData = async (id) => {
+    axios.delete('http://localhost:3100/placas/' + id, {
     })
-} 
+  }
 
 
   return (
@@ -99,20 +104,20 @@ const deleteData = async (id) => {
           </section>
         </section>
       </section>
-        <section className="contenido-placa">
-          <section className="input-group flex-nowrap">
+      <section className="contenido-placa">
+        <section className="input-group flex-nowrap">
 
-            <span className="input-group-text" id="addon-wrapping">INGRESE PLACA</span>
-            <input value={placas} onChange={(e) => setPlacas(e.target.value)} className="form-control" placeholder="Placa" />
-          </section>
-          <section className="input-group flex-nowrap">
-            <span className="input-group-text" id="addon-wrapping">FECHA  Y HORA DE INGRESO</span>
-            <input value={value} onChange={(e) => onChange(e.target.value)} type="data" className="form-control" disabled />
-          </section>
-          <section className="input-group flex-nowrap">
-            <button onClick={postData}  className=" btns botonIngresar">INGRESAR</button>
-          </section>
+          <span className="input-group-text" id="addon-wrapping">INGRESE PLACA</span>
+          <input value={placas} onChange={(e) => setPlacas(e.target.value)} className="form-control" placeholder="Placa" />
         </section>
+        <section className="input-group flex-nowrap">
+          <span className="input-group-text" id="addon-wrapping">FECHA  Y HORA DE INGRESO</span>
+          <input value={value} onChange={(e) => onChange(e.target.value)} type="data" className="form-control" disabled />
+        </section>
+        <section className="input-group flex-nowrap">
+          <button onClick={postData} className=" btns botonIngresar">INGRESAR</button>
+        </section>
+      </section>
       <section className="bd-example">
         <table className="table table-dark table-borderless">
           <thead>
@@ -128,13 +133,13 @@ const deleteData = async (id) => {
               <tr key={placas.id}>
                 <th>{placas.placa}</th>
                 <th>{placas.fecha_ingreso}</th>
-                <th>{placas.estado === "1" && <p>{placas.fecha_salida}</p>}{placas.estado === "0" && <button onClick={ ()=>putData(placas.id)} className="fin" ><FontAwesomeIcon className='color-icon' icon={faExclamationCircle} /> Terminar parqueo</button>}</th>
-                <th><button onClick={ ()=>deleteData(placas.id)} className="eliminar"  ><FontAwesomeIcon icon={faTrash} /> Eliminar</button></th>
+                <th>{placas.estado === "1" && <p>{placas.fecha_salida}</p>}{placas.estado === "0" && <button onClick={() => putData(placas.id)} className="fin" ><FontAwesomeIcon className='color-icon' icon={faExclamationCircle} /> Terminar parqueo</button>}</th>
+                <th><button onClick={() => deleteData(placas.id)} className="eliminar"  ><FontAwesomeIcon icon={faTrash} /> Eliminar</button></th>
 
               </tr>
 
             ))}
-            
+
 
           </tbody>
 
