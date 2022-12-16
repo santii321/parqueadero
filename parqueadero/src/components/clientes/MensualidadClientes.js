@@ -4,10 +4,10 @@ import '../../assets/style/clientes.css'
 
 const MensualidadClientes = () => {
     return (
-        <section className="contenedormensualidad m-2 mx-3 mb-5">
-             <section className="tituloourpricing my-5">
+        <section className="contenedormensualidad m-2 mx-3 mb-5 mt-5">
+             <section className="tituloourpricing my-5 mt-2">
                 <h1 className="text-center text-warning text-uppercase">COSTOS</h1>
-                <p className="text-center text-white">Prices are for any type of transport! Choose what service you need and our staff will do everything qualitatively.</p>
+                <p className="text-center text-white fs-5">Los precios son para cualquier tipo de transporte! Elija qué servicio necesita y nuestro personal hará todo de manera cualitativa.</p>
             </section>
             <section class="cards">
                 <section className="card shadow">
