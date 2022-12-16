@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamation, faExclamationCircle, faTrash } from '@fortawesome/free-solid-svg-icons'
@@ -10,13 +10,17 @@ function Home() {
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
 
-  function getPlaca() {
-    fetch('http://localhost:3100/placas')
-      .then(res => res.json())
-      .then(res => setPlaca(res))
-
-  }
+  useEffect(() => {
     getPlaca()
+   });
+
+const getPlaca = async ()=>{
+  const response = await axios.get('http://localhost:3100/placas')
+  setPlaca(response.data)
+}
+
+  
+    
 
   
   const postData = async () => {
@@ -113,7 +117,6 @@ const deleteData = async (id) => {
         <table className="table table-dark table-borderless">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Placa</th>
               <th scope="col">Hora de ingreso</th>
               <th scope="col">Estado</th>
@@ -123,7 +126,6 @@ const deleteData = async (id) => {
           <tbody>
             {placa.map(placas => (
               <tr key={placas.id}>
-                <th>{placas.id}</th>
                 <th>{placas.placa}</th>
                 <th>{placas.fecha_ingreso}</th>
                 <th>{placas.estado === "1" && <p>{placas.fecha_salida}</p>}{placas.estado === "0" && <button onClick={ ()=>putData(placas.id)} className="fin" ><FontAwesomeIcon className='color-icon' icon={faExclamationCircle} /> Terminar parqueo</button>}</th>
