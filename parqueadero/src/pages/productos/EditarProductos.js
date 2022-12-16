@@ -42,7 +42,7 @@ function EditarProductos(){
         <section className='w-100'>
             <section className="d-flex section-btns">
                 <Link className="btn btn-agregar" to="/Productos">
-                volver
+                regresar
                 </Link>
             </section>
             <section className='w-100 d-flex  justify-content-center flex-wrap section-agregar'>
