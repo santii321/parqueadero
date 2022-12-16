@@ -1,4 +1,10 @@
-/*!--------------------------------FORMULARIO DE CLIENTES--------------------------------------*/
+
+.contenedorServicios section{
+    margin-bottom: 7%;
+}
+
+
+/*!--------------------------------FORMULARIO DE CLIENTES--------------------------------------/*/
 
 .contenedor {
     width: 100%;
@@ -74,11 +80,11 @@
 }
 
 
-/*!------------------------------------CARDS MENSUALIDAD-------------------------------------------------------------*/
+/*!------------------------------------CARDS MENSUALIDAD-------------------------------------------------------------/*/
 
 .contenedormensualidad {
     width: 100%;
-    height: 95vh;
+    height: 100% ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,7 +272,7 @@
     }
 }
 
-/*!--------------------------------------------TESTIMONIOS ----------------------------------------------*/
+/*!--------------------------------------------TESTIMONIOS ----------------------------------------------/*/
 
 .contenedoropiniones{
     margin-top: 0.5rem;
@@ -277,7 +283,7 @@
     padding:0 10px;
     border-radius: 20px;
     border: 0;
-    height: 90% !important;
+    height: 55vh ;
     width: 90%;
     margin-top: 2rem;
  }
@@ -314,6 +320,3 @@
     top: auto;
     bottom: -60px;
  }
-
-
-  
