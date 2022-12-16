@@ -47,8 +47,8 @@ function TablaClientes() {
               <th>{cliente.correo}</th>
               <th>{cliente.direccion}</th>
               <th>{cliente.telefono}</th>
-              <th>
-                <Link to={`/EditarCliente/${cliente.id}`} className=" btn bg-primary btn-editar"><Icon css="" icon={faEdit} /></Link>
+              <th className="d-flex justify">
+                <button className="btn btn-editar"><Link to={`/EditarCliente/${cliente.id}`} className="btn-editar"><Icon css="" icon={faEdit} /></Link></button>
                 <button className=" btn btn-eliminar bg-danger" onClick={() => deleteClientes(cliente.id)}><Icon css="" icon={faTrash} /></button>
               </th>
               <th> </th>

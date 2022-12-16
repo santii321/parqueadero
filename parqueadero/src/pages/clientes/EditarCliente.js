@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const url ='http://localhost:3100/clientes/';
 
@@ -32,7 +32,7 @@ function EditarCliente(){
             direccion,
             telefono
         })
-        navigate('/NuevoCliente');
+        navigate('/FormularioClientes');
     }
 
     const getClienteId = async () =>{
@@ -49,7 +49,13 @@ function EditarCliente(){
     }, []);
 
     return (
-        <section className="contenedor m-2 mx-3 mt-5">
+        <section className="w-100 ">
+            <section className="d-flex section-btns">
+                <Link className="btn btn-agregar" to="/NuevoCliente">
+                regresar
+                </Link>
+            </section>
+            <section className='w-100 d-flex  justify-content-center flex-wrap'>
             <form className="contact w-50 d-flex flex-column" id="contact" onSubmit={updateCliente} >
                 <h3 className="text-center text-uppercase">Editar Cliente</h3>
                 <fieldset className='input-group flex-nowrap'>
@@ -72,10 +78,12 @@ function EditarCliente(){
                     <span className='input-group-text' id='addon-wrapping'>TELEFONO</span>
                     <input type="text" tabindex="5" value={telefono} onChange={(e)=> setTelefono(e.target.value)} required autofocus />
                 </fieldset>
-                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" onClick="/FormularioClientes" data-submit="...Sending">AgregarCambio</button>
+                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" onClick="/FormularioClientes" data-submit="...Sending">Agregar Cambio</button>
 
             </form>
 
+            </section>
+            
             
         </section>
     )

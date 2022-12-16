@@ -6,7 +6,7 @@ function Productos() {
     <section className="w-100 section-productos">
       <section className="d-flex section-btns">
         <Link className="btn btn-agregar" to="/AgregarProductos">
-          AGREGAR
+          agregar producto
         </Link>
       </section>
 

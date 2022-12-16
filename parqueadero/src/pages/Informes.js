@@ -1,4 +1,4 @@
-import Carrusel from "../components/Carrusel.js";
+import Carrusel from "../components/Carrusel";
 
 function Informes() {
     return(
