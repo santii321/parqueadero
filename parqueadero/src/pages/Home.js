@@ -10,6 +10,7 @@ function Home() {
   const [placa, setPlaca] = useState([])
   const [placas, setPlacas] = useState('')
 
+
   useEffect(() => {
     getPlaca()
   });
@@ -33,7 +34,7 @@ function Home() {
             setPlacas('');
           })
       } else {
-        console.log("error")
+        alert("Por favor ingrese una placa Valida")
         setPlacas('');
         return
 
@@ -84,7 +85,7 @@ function Home() {
         <section className="card">
           <section className="card-body">
             <section className="row">
-              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Total saldo</span> <span className="h3 font-bold mb-0">$1.400</span></section>
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Valor Hora</span> <span className="h3 font-bold mb-0">$1.400</span></section>
               <section className="col-auto">
                 <section className="icon icon-shape bg-info text-white text-lg rounded-circle"><i className="bi bi-clock-history"></i></section>
               </section>
@@ -96,7 +97,7 @@ function Home() {
         <section className="card">
           <section className="card-body">
             <section className="row">
-              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">capacidad</span> <span className="h3 font-bold mb-0">95%</span></section>
+              <section className="col"><span className="h6 font-semibold text-muted text-sm d-block mb-2">Valor Día</span> <span className="h3 font-bold mb-0">$5.000</span></section>
               <section className="col-auto">
                 <section className="icon icon-shape bg-warning text-white text-lg rounded-circle"><i className="bi bi-minecart-loaded"></i></section>
               </section>
