@@ -78,7 +78,7 @@
 
 .contenedormensualidad {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +170,7 @@
 }
 
 .pack {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 280px) {
@@ -269,7 +269,7 @@
 /*!--------------------------------------------TESTIMONIOS ----------------------------------------------*/
 
 .contenedoropiniones{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
  .opiniones{
     background-color: white;

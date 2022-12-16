@@ -14,6 +14,15 @@ function EditarCliente(){
     const navigate = useNavigate();
     const {id} = useParams();
 
+    const expresionRegular = {
+        usuario: /^[a-zA-Z0-9\_]{4,16}$/, // Letras, numeros, guion_bajo
+        nombre: /^[a-zA-ZÀ-ÿ\s]{3,20}$/, // Letras y espacios, pueden llevar acentos.
+        password: /^.{4,12}$/, // 4 a 12 digitos
+        correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+        documento: /^\d{9,10}$/,
+        celular: /^\d{10}$/
+    };
+
     const updateCliente = async (e) =>{
         e.preventDefault();
         await axios.put(url + id,{
@@ -63,7 +72,7 @@ function EditarCliente(){
                     <span className='input-group-text' id='addon-wrapping'>TELEFONO</span>
                     <input type="text" tabindex="5" value={telefono} onChange={(e)=> setTelefono(e.target.value)} required autofocus />
                 </fieldset>
-                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" data-submit="...Sending">AgregarCambio</button>
+                <button className="my-3 fw-semibold btns" type="submit" id="contact-submit" onClick="/FormularioClientes" data-submit="...Sending">AgregarCambio</button>
 
             </form>
 
