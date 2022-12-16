@@ -22,7 +22,7 @@
 .btn-editar, .btn-eliminar{
   width: auto !important;
   border-radius: 10px;
-  margin: 0 2% 4%;
+  margin: 0 3% 4%;
   color: black !important;
 }
 
@@ -56,7 +56,7 @@
 
 
 .card__producto {
-  height: 65vh;
+  height: 66vh;
   margin: 3% 3% 0;
   background: transparent !important;
   border: none;
@@ -71,10 +71,11 @@
 
 
 .card__imagen {
-  margin-top: -8%;
+  margin-top: 2%;
   height: 100%;
 }
 .card__imagen img {
+  width: 70%;
   height: 35vh;
   object-fit: contain;
   /* border: 1px solid white; */
@@ -82,22 +83,27 @@
 
 .section-conenido{
   color: #ffff00;
-
-  width: 98% !important;
+  width: 92% !important;
   height: 20vh;
-  margin: 0 1% 0;
+  margin: 3% 4% 0;
 }
 
 p:nth-child(2){
-  height: 4vh;
+  height: 7vh;
+  line-height: 1;
+  color: white;
+  font-weight: 500;
+  
 }
 
 p:nth-child(3){
   height: 4vh;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .section-conenido h3{
   text-transform: uppercase;
   font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.658) ;
 }

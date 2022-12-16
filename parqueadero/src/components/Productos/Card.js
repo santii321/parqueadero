@@ -27,9 +27,9 @@ const Card = () =>{
         {productos.map((productos) => (
           <section className="w-25  card__producto d-flex flex-column">
               
-            <section className="w-100 card__imagen d-flex ">
+            <section className="w-100 card__imagen d-flex justify-content-center">
               <img
-                className="card__imagen-img rounded w-100"
+                className="card__imagen-img rounded "
                 src={productos.imagen}
                 alt="Imagen Producto"
               />

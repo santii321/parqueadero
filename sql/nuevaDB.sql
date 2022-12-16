@@ -43,17 +43,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nombre`, `documento`, `correo`, `direccion`, `telefono`, `createdAt`, `updatedAt`) VALUES
-(1, 'jshdjsj', '1162663', 'hdwsjsjsj', 'jsdsjsj', '273737', '2022-12-13', '2022-12-13'),
-(2, 'kwqkwkwk', '353535', 'hsjsjd', 'jsjdjdj', '17363', '2022-12-13', '2022-12-13'),
-(3, 'kkkkkq', '273737', 'jdjdjd', '838383j', '283737', '2022-12-13', '2022-12-13'),
-(4, 'kkkkkq', '273737', 'jdjdjd', '838383j', '283737', '2022-12-13', '2022-12-13'),
-(5, 'kkkkkq', '273737', 'jdjdjd', '838383j', '283737', '2022-12-13', '2022-12-13'),
-(6, 'kskssksk', '2837373', 'sjsjsjsj', '38373737', 'isisidkd', '2022-12-13', '2022-12-13'),
-(7, 'msdjsjk', '373737', 'jdjddjdj', '288383', '38833', '2022-12-13', '2022-12-13'),
-(8, 'jkskk', '3837464', 'jsjsjs', '83883', '84874747', '2022-12-13', '2022-12-13'),
-(9, 'jsjsjs', '474774', 'jsjxks', 'jdjdjd', '233', '2022-12-13', '2022-12-13'),
-(10, 'kkkkddk', '3444', 'jdnj', 'kdkdk', '333', '2022-12-14', '2022-12-14');
-
+(1, 'Jaime', '1234567890', 'jaimezapata@gmail.com', 'cr 50 # 30-20', '2304879', '2022-12-13', '2022-12-13'),
+(2, 'Juan', '0987654321', 'juan@hotmail.com', 'cr 25 # 90-158', '2393259', '2022-12-13', '2022-12-13');
 -- --------------------------------------------------------
 
 --
@@ -88,7 +79,7 @@ CREATE TABLE `productos` (
   `id` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `descripcion` varchar(255) NOT NULL,
-  `imagen` varchar(255) NOT NULL,
+  `imagen` text NOT NULL,
   `precio` double NOT NULL,
   `cantidad` int(11) NOT NULL,
   `createdAt` date NOT NULL,
@@ -100,7 +91,9 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`, `cantidad`, `createdAt`, `updatedAt`) VALUES
-(1, 'Casco Shoe', 'Para mayor seguridad', 'https://www.shoeicorver.com/img/cascos/01-img-shoei-casco-moto-xspirit3.png', 350000, 20, '2022-12-15', '2022-12-15');
+(1, 'Casco Shoe', 'Para mayor seguridad', 'https://www.shoeicorver.com/img/cascos/01-img-shoei-casco-moto-xspirit3.png', 350000, 20, '2022-12-15', '2022-12-15'),
+(2, 'Botas sidi', 'Espinillera y protección del metatarso totalmente desmontable y reemplazable', 'https://www.corver.es/images/producte/01-img-corver-sidi-crossfire3-srs-gris-azul-negro-bota-de-moto-offroad-enduro-motocross.png', 125000, 10, '2022-12-15', '2022-12-15'),
+(3, 'Guantes turer', 'Para mayor seguridad', 'https://cdn.shopify.com/s/files/1/0034/7216/2885/products/Guantes_Turer_B2_2048x2048.png?v=1646069953', 93500, 15, '2022-12-15', '2022-12-15');
 
 --
 -- Índices para tablas volcadas
