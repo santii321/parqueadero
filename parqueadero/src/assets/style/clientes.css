@@ -50,8 +50,6 @@
 
 }
 
-
-
 #contact button[type="submit"] {
     cursor: pointer;
     width: 50%;
@@ -283,7 +281,7 @@
     padding:0 10px;
     border-radius: 20px;
     border: 0;
-    height: 55vh ;
+    height: 20rem ;
     width: 90%;
     margin-top: 2rem;
  }
